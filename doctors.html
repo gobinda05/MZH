@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Meet our team of 200+ expert doctors at MZH Hospisol. Highly qualified specialists across all medical fields.">
-    <title>Our Doctors | MZH Hospisol</title>
+        content="Meet our team of 200+ expert doctors and surgeons at MZH Hospisol. Highly qualified consultants across cardiology, neurology, orthopedics, oncology, and more.">
+    <title>Our Doctors | MZH Hospisol - 200+ Leading Medical Specialists</title>
+    
+    <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.svg" alt="MZH Hospisol">
+            <a href="index.html" class="nav-logo" aria-label="MZH Hospisol Home">
+                <img src="logo.svg" alt="MZH Hospisol Logo" width="200" height="64">
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -34,342 +44,486 @@
                 <li><a href="doctors.html" class="nav-link active">Doctors</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                
+                <li class="nav-mobile-footer">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-emergency btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call 24/7 Hotline
+                    </a>
+                </li>
             </ul>
-            <a href="contact.html" class="nav-cta">
-                <i class="fas fa-phone-alt"></i> Contact Us
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact Us
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <h1 class="page-title">Our Expert Doctors</h1>
-            <p class="page-subtitle">200+ Highly Qualified Medical Professionals</p>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Doctors</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header Banner -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <h1 class="page-title">Our Medical Specialists</h1>
+                <p class="page-subtitle">200+ Renowned Physicians, Surgeons & Medical Pioneers</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Our Doctors</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Doctors Section -->
-    <section class="section doctors">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label"><span></span> Meet Our Team</div>
-                <h2 class="section-title">Experienced & <span class="gradient-text">Compassionate Doctors</span></h2>
-                <p class="section-subtitle">Our team of highly qualified and experienced doctors are dedicated to
-                    providing exceptional patient care across all specialties.</p>
+        <!-- Doctors Directory Section -->
+        <section class="section doctors">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-user-doctor"></i> Medical Faculty</div>
+                    <h2 class="section-title">Experienced & <span class="gradient-text">Compassionate Doctors</span></h2>
+                    <p class="section-subtitle">Find a leading specialist suited to your healthcare needs. Filter by clinical department or search by physician name.</p>
+                </div>
+
+                <!-- Instant Search Input -->
+                <div class="filter-search-bar reveal">
+                    <i class="fas fa-search filter-search-icon"></i>
+                    <input type="text" id="doctorSearch" class="filter-search-input" placeholder="Search doctor by name, specialty, or qualifications (e.g. Sharma, Cardio, AIIMS)...">
+                </div>
+
+                <!-- Filter Category Tabs with Badge Counters -->
+                <div class="filter-tabs reveal">
+                    <button class="filter-tab active" data-filter="all">
+                        All Specialists <span class="tab-count">9</span>
+                    </button>
+                    <button class="filter-tab" data-filter="cardiology">
+                        Cardiology <span class="tab-count">2</span>
+                    </button>
+                    <button class="filter-tab" data-filter="neurology">
+                        Neurology <span class="tab-count">2</span>
+                    </button>
+                    <button class="filter-tab" data-filter="orthopedics">
+                        Orthopedics <span class="tab-count">2</span>
+                    </button>
+                    <button class="filter-tab" data-filter="pediatrics">
+                        Pediatrics <span class="tab-count">2</span>
+                    </button>
+                    <button class="filter-tab" data-filter="oncology">
+                        Oncology <span class="tab-count">1</span>
+                    </button>
+                </div>
+
+                <!-- Doctors Grid -->
+                <div class="doctors-grid">
+                    <!-- Doctor 1: Cardiology -->
+                    <div class="doctor-card reveal" data-department="cardiology">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-md doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Cardiology</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Rajesh Sharma</h3>
+                                <p class="doctor-specialty">Senior Interventional Cardiologist</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5.0 (420+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 20+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MD, DM (Cardio), AIIMS</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Specialist in complex angioplasties, coronary stenting, transcatheter aortic valve replacement (TAVR), and pacemaker implants. Former Head of Cardiology at AIIMS.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2: Neurology -->
+                    <div class="doctor-card reveal" data-department="neurology">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-doctor doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Neurology</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Priya Mehta</h3>
+                                <p class="doctor-specialty">Neurologist & Stroke Specialist</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>4.9 (380+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 15+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MD, DM (Neuro), PGI</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Renowned expert in acute ischemic stroke intervention, mechanical thrombectomy, epilepsy management, and neurological movement disorders.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 3: Orthopedics -->
+                    <div class="doctor-card reveal" data-department="orthopedics">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-md doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Orthopedics</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Vikram Singh</h3>
+                                <p class="doctor-specialty">Robotic Joint Replacement Surgeon</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5.0 (610+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 18+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MS (Ortho), MCh (UK)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Pioneer in robotic total knee and hip replacement surgery with over 5,000+ successful joint surgeries performed. Fellowship trained in Germany.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 4: Pediatrics -->
+                    <div class="doctor-card reveal" data-department="pediatrics">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-doctor doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Pediatrics</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Anita Desai</h3>
+                                <p class="doctor-specialty">Pediatrician & Neonatologist</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.9 (530+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 12+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MD (Peds), DNB, Fellowship</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Dedicated neonatal intensive care specialist, child growth counselor, and expert in pediatric infectious diseases and childhood asthma.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 5: Cardiology -->
+                    <div class="doctor-card reveal" data-department="cardiology">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-md doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Cardiology</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Suresh Kumar</h3>
+                                <p class="doctor-specialty">Senior Cardiothoracic & Vascular Surgeon</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5.0 (340+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 25+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MS, MCh (CTVS)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Globally recognized expert in beating-heart coronary artery bypass surgery, minimally invasive valve repairs, and aortic aneurysm surgeries.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 6: Neurology -->
+                    <div class="doctor-card reveal" data-department="neurology">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-md doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Neurology</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Amit Patel</h3>
+                                <p class="doctor-specialty">Consultant Neurosurgeon</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>4.8 (290+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 22+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MS, MCh (Neurosurgery)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Specializes in microscopic brain tumor resections, complex spinal instrumentation, endoscopic skull base surgery, and traumatic brain injury care.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 7: Oncology -->
+                    <div class="doctor-card reveal" data-department="oncology">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-doctor doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Oncology</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Sarah Verma</h3>
+                                <p class="doctor-specialty">Lead Medical & Hematological Oncologist</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.9 (480+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 16+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MD, DM (Medical Oncology)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Focuses on targeted cancer immunotherapy, precision genomics, breast and lung oncology, and bone marrow transplant protocols.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 8: Orthopedics -->
+                    <div class="doctor-card reveal" data-department="orthopedics">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-md doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Orthopedics</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Rahul Gupta</h3>
+                                <p class="doctor-specialty">Sports Medicine & Arthroscopy Specialist</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.9 (310+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 14+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MS (Ortho), Fellowship (USA)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Keyhole arthroscopic reconstruction for ACL/PCL tears, rotator cuff repairs, and cartilage restoration. Official medical consultant to national sports athletes.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 9: Pediatrics -->
+                    <div class="doctor-card reveal" data-department="pediatrics">
+                        <div class="doctor-image-wrapper">
+                            <i class="fas fa-user-doctor doctor-avatar-icon"></i>
+                            <span class="doctor-status-badge available">Available Today</span>
+                            <span class="doctor-department-tag">Pediatrics</span>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-header">
+                                <h3 class="doctor-name">Dr. Kavita Reddy</h3>
+                                <p class="doctor-specialty">Consultant Pediatric & Neonatal Surgeon</p>
+                            </div>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>5.0 (260+ Reviews)</span>
+                            </div>
+                            <div class="doctor-meta">
+                                <div class="meta-item"><i class="fas fa-briefcase"></i> 17+ Years Exp.</div>
+                                <div class="meta-item"><i class="fas fa-graduation-cap"></i> MS, MCh (Pediatric Surgery)</div>
+                            </div>
+                            <p class="doctor-bio">
+                                Expert in minimally invasive neonatal congenital surgeries, pediatric urology, and laparoscopic corrective procedures for newborns.
+                            </p>
+                            <div class="doctor-actions">
+                                <a href="contact.html" class="btn btn-primary btn-block btn-sm">
+                                    <i class="fas fa-paper-plane"></i> Contact Specialist
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Filter Buttons -->
-            <div class="doctor-filters">
-                <button class="filter-btn active" data-filter="all">All Doctors</button>
-                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
-                <button class="filter-btn" data-filter="neurology">Neurology</button>
-                <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
-                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
-                <button class="filter-btn" data-filter="oncology">Oncology</button>
-            </div>
-
-            <!-- Doctors Grid -->
-            <div class="doctors-grid">
-                <!-- Doctor 1 -->
-                <div class="doctor-card" data-department="cardiology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.sharma@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Rajesh Sharma</h3>
-                        <p class="doctor-specialty">Senior Cardiologist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 20+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD, DM (Cardio)</span>
-                        </div>
-                        <p class="doctor-desc">Specializes in interventional cardiology and complex angioplasties.
-                            Former HOD at AIIMS Delhi.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 2 -->
-                <div class="doctor-card" data-department="neurology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.mehta@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Priya Mehta</h3>
-                        <p class="doctor-specialty">Neurologist & Stroke Specialist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 15+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD, DM (Neuro)</span>
-                        </div>
-                        <p class="doctor-desc">Expert in stroke management and neurointerventional procedures. Published
-                            50+ research papers.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 3 -->
-                <div class="doctor-card" data-department="orthopedics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.singh@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Vikram Singh</h3>
-                        <p class="doctor-specialty">Orthopedic Surgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 18+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS (Ortho), MCh</span>
-                        </div>
-                        <p class="doctor-desc">Pioneer in robotic knee replacement surgery. Performed 5000+ joint
-                            replacements.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 4 -->
-                <div class="doctor-card" data-department="pediatrics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.desai@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Anita Desai</h3>
-                        <p class="doctor-specialty">Pediatrician & Neonatologist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 12+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD (Peds), DNB</span>
-                        </div>
-                        <p class="doctor-desc">Specialized in neonatal intensive care and pediatric infectious diseases.
-                            Compassionate child care.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 5 -->
-                <div class="doctor-card" data-department="cardiology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.kumar@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Suresh Kumar</h3>
-                        <p class="doctor-specialty">Cardiac Surgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 25+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, MCh (CVTS)</span>
-                        </div>
-                        <p class="doctor-desc">Renowned for minimally invasive cardiac surgery. Successfully performed
-                            3000+ open heart surgeries.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 6 -->
-                <div class="doctor-card" data-department="neurology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.patel@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Amit Patel</h3>
-                        <p class="doctor-specialty">Neurosurgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 22+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, MCh (Neuro)</span>
-                        </div>
-                        <p class="doctor-desc">Expertise in brain tumor surgery, spine surgery, and minimally invasive
-                            neurosurgical techniques.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 7 -->
-                <div class="doctor-card" data-department="oncology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.verma@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Sarah Verma</h3>
-                        <p class="doctor-specialty">Medical Oncologist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 16+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD, DM (Onco)</span>
-                        </div>
-                        <p class="doctor-desc">Specializes in breast and lung cancer treatment. Expert in immunotherapy
-                            and targeted therapy.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 8 -->
-                <div class="doctor-card" data-department="orthopedics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.gupta@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Rahul Gupta</h3>
-                        <p class="doctor-specialty">Sports Medicine Specialist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 14+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, Fellowship</span>
-                        </div>
-                        <p class="doctor-desc">Expert in sports injuries and arthroscopic surgery. Team doctor for
-                            national sports teams.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
-                    </div>
-                </div>
-
-                <!-- Doctor 9 -->
-                <div class="doctor-card" data-department="pediatrics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="mailto:dr.reddy@mzhhospisol.com"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Kavita Reddy</h3>
-                        <p class="doctor-specialty">Pediatric Surgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 17+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, MCh (Peds)</span>
-                        </div>
-                        <p class="doctor-desc">Specializes in neonatal and pediatric laparoscopic surgery. Performed
-                            2000+ pediatric surgeries.</p>
-                        <a href="contact.html" class="btn btn-sm">Book Appointment</a>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Connect With Our Medical Specialists</h2>
+                    <p>Reach out to our specialist doctors and clinical support team for medical advice and hospital consultations.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Contact Us
+                        </a>
+                        <a href="tel:+911234567890" class="btn btn-outline btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call +91 123 456 7890
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Schedule a Consultation</h2>
-                <p>Book an appointment with our expert doctors today and experience world-class healthcare.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calendar-check"></i> Book Appointment
-                    </a>
-                    <a href="tel:+911234567890" class="btn btn-outline btn-lg">
-                        <i class="fas fa-phone-alt"></i> Call +91 123 456 7890
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>MZH Hospisol</h3>
-                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
-                        advanced diagnostics with compassionate care.</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="MZH Hospisol" width="220" height="72">
+                    </div>
+                    <p class="footer-desc">
+                        MZH Hospisol is a nationally and internationally accredited multi-specialty healthcare institution offering compassionate healing, cutting-edge diagnostics, and precision surgical care.
+                    </p>
                     <div class="footer-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
+                    <div class="footer-links-list">
+                        <a href="index.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> About Us</a>
+                        <a href="departments.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Departments</a>
+                        <a href="doctors.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Our Doctors</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Services</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Contact Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Emergency Care</a></li>
-                        <li><a href="services.html">Diagnostics</a></li>
-                        <li><a href="services.html">Surgery</a></li>
-                        <li><a href="services.html">Pharmacy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <div class="footer-links-list">
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Emergency Care</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Diagnostic Pathology</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 3T MRI & CT Scans</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Robotic Surgery</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Pharmacy</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Health Checkup Packages</a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
-                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Street, Healthcare City, State - 123456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+911234567890">+91 123 456 7890</a> (24/7 Line)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>OPD: Mon–Sat (9 AM – 7 PM) | Emergency: 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-box">
+                        <p>Subscribe for health tips & news:</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
-                        of Service</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. JCI & NABH Accredited Healthcare Provider.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Rights</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Emergency Floating Trigger -->
+    <a href="tel:+911234567890" class="floating-emergency" aria-label="Call Emergency Hotline">
+        <i class="fas fa-phone-alt"></i> <span>24/7 Emergency</span>
+    </a>
+
+    <!-- Interactive Script -->
     <script src="script.js"></script>
 </body>
 

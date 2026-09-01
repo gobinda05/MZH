@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Comprehensive medical services at MZH Hospisol including diagnostics, emergency care, surgery, and specialized treatments.">
-    <title>Services | MZH Hospisol</title>
+        content="Comprehensive medical and diagnostic services at MZH Hospisol including 3T MRI, 128-Slice CT, NABL pathology, 24/7 emergency care, and health checkup packages.">
+    <title>Our Services | MZH Hospisol - Advanced Diagnostics & Clinical Care</title>
+    
+    <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.svg" alt="MZH Hospisol">
+            <a href="index.html" class="nav-logo" aria-label="MZH Hospisol Home">
+                <img src="logo.svg" alt="MZH Hospisol Logo" width="200" height="64">
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -34,363 +44,459 @@
                 <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                 <li><a href="services.html" class="nav-link active">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                
+                <li class="nav-mobile-footer">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-emergency btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call 24/7 Hotline
+                    </a>
+                </li>
             </ul>
-            <a href="contact.html" class="nav-cta">
-                <i class="fas fa-phone-alt"></i> Contact Us
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact Us
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <h1 class="page-title">Our Services</h1>
-            <p class="page-subtitle">Comprehensive Healthcare Solutions</p>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Services</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header Banner -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <h1 class="page-title">Medical & Diagnostic Services</h1>
+                <p class="page-subtitle">Precision Diagnostics, 24/7 Emergency Care & Advanced Therapeutics</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Services</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section class="section services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label"><span></span> What We Offer</div>
-                <h2 class="section-title">Diagnostic & <span class="gradient-text">Medical Services</span></h2>
-                <p class="section-subtitle">State-of-the-art facilities with NABL accredited laboratories ensuring
-                    accurate and timely results for all your medical needs.</p>
+        <!-- Services Section with Instant Search -->
+        <section class="section services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-vial"></i> What We Offer</div>
+                    <h2 class="section-title">Diagnostic & <span class="gradient-text">Medical Services</span></h2>
+                    <p class="section-subtitle">NABL accredited automated pathology, 3T MRI, 128-slice CT scans, and 24/7 emergency critical care units.</p>
+                </div>
+
+                <!-- Instant Search Bar -->
+                <div class="filter-search-bar reveal">
+                    <i class="fas fa-search filter-search-icon"></i>
+                    <input type="text" id="serviceSearch" class="filter-search-input" placeholder="Search diagnostic test, lab panel, or medical service (e.g. MRI, Blood Test, Dialysis, Checkup)...">
+                </div>
+
+                <div class="services-grid">
+                    <!-- 1. Blood Tests -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Clinical Blood Panels</h3>
+                        <p>Comprehensive blood chemistry, routine hematology, hormone analysis, and metabolic organ function profiles.</p>
+                        <ul class="service-tests">
+                            <li>Complete Blood Count (CBC) with ESR</li>
+                            <li>HbA1c & Fasting Glucose Profile</li>
+                            <li>Thyroid Panel (Total & Free T3, T4, TSH)</li>
+                            <li>Liver & Kidney Function Tests (LFT / KFT)</li>
+                            <li>Lipid Profile & Cardiac Risk Panel</li>
+                            <li>Vitamin D3, B12 & Iron Profile</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Price starting from</span>
+                            <span class="service-price-val">₹299</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Imaging & Radiology (Featured) -->
+                    <div class="service-card featured reveal">
+                        <span class="featured-badge">Most Popular</span>
+                        <div class="service-icon"><i class="fas fa-x-ray"></i></div>
+                        <h3>Advanced Imaging & Radiology</h3>
+                        <p>Ultra high-resolution imaging technology delivering millimeter-precise diagnostics for early intervention.</p>
+                        <ul class="service-tests">
+                            <li>3.0 Tesla Silent MRI Scan</li>
+                            <li>128-Slice Low-Dose Dual Energy CT</li>
+                            <li>High-Definition Digital X-Ray</li>
+                            <li>3D / 4D Color Doppler Ultrasound</li>
+                            <li>Digital Full-Field Mammography</li>
+                            <li>DEXA Bone Mineral Densitometry</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Price starting from</span>
+                            <span class="service-price-val">₹1,499</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Cardiac Tests -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Cardiac Diagnostics</h3>
+                        <p>Complete non-invasive and invasive cardiac evaluation for early detection of heart diseases and arrhythmia.</p>
+                        <ul class="service-tests">
+                            <li>12-Lead Digital ECG</li>
+                            <li>2D / 3D Echocardiography with Doppler</li>
+                            <li>TMT (Treadmill Stress Test)</li>
+                            <li>24-Hour Holter ECG Monitoring</li>
+                            <li>Ambulatory Blood Pressure Monitoring (ABPM)</li>
+                            <li>Cardiac Troponin & Biomarker Panels</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Price starting from</span>
+                            <span class="service-price-val">₹599</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Pathology Lab -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-microscope"></i></div>
+                        <h3>NABL Certified Pathology</h3>
+                        <p>Fully automated pathology, microbiology, and molecular diagnostic testing with barcode-tracked accuracy.</p>
+                        <ul class="service-tests">
+                            <li>Clinical Biochemistry & Serology</li>
+                            <li>Microbiology & Antibiotic Sensitivity</li>
+                            <li>Histopathology & Frozen Section Biopsy</li>
+                            <li>Cytology & Pap Smears</li>
+                            <li>Genomic RT-PCR Diagnostics</li>
+                            <li>Automated Immunoassays</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Price starting from</span>
+                            <span class="service-price-val">₹199</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. 24/7 Emergency Care -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-ambulance"></i></div>
+                        <h3>24/7 Emergency & Trauma</h3>
+                        <p>Immediate acute medical attention for trauma, heart attacks, stroke, burns, and respiratory distress.</p>
+                        <ul class="service-tests">
+                            <li>Level 1 Emergency Resuscitation Bay</li>
+                            <li>Dedicated Neuro & Cardiac Crash Carts</li>
+                            <li>Intensive Critical Care Units (ICU & CCU)</li>
+                            <li>GPS-Enabled ACLS Ambulance Dispatch</li>
+                            <li>24/7 Emergency Operation Theaters</li>
+                            <li>Poison Control & Toxicology Unit</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Availability</span>
+                            <span class="service-price-val" style="color:var(--danger);">24/7 Round the Clock</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Surgical Services -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-procedures"></i></div>
+                        <h3>Advanced Surgical Suites</h3>
+                        <p>Modular laminar airflow surgical suites equipped with Da Vinci robotic systems and high-definition laparoscopy.</p>
+                        <ul class="service-tests">
+                            <li>Da Vinci Robotic Surgery</li>
+                            <li>Minimally Invasive Laparoscopic Surgery</li>
+                            <li>Cardiothoracic & Vascular Surgery</li>
+                            <li>Neuro & Spine Microsurgery</li>
+                            <li>Robotic Orthopedic Joint Replacement</li>
+                            <li>Same-Day Day-Care Surgeries</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Consultation</span>
+                            <span class="service-price-val">Specialist Evaluation</span>
+                        </div>
+                    </div>
+
+                    <!-- 7. Pharmacy -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-pills"></i></div>
+                        <h3>24/7 In-House Pharmacy</h3>
+                        <p>Complete stock of genuine prescription medications, specialized oncology drugs, and critical care injectables.</p>
+                        <ul class="service-tests">
+                            <li>100% Genuine Prescription Medicines</li>
+                            <li>Temperature-Controlled Cold-Chain Storage</li>
+                            <li>Specialized Oncology & Cardiac Drugs</li>
+                            <li>Surgical Implants & Hospital Disposables</li>
+                            <li>Health Supplements & Medical Equipment</li>
+                            <li>Express Home Delivery Service</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Service</span>
+                            <span class="service-price-val">Open 24/7</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. Health Checkup Packages -->
+                    <div class="service-card featured reveal">
+                        <span class="featured-badge">Preventive Care</span>
+                        <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>Health Checkup Packages</h3>
+                        <p>Comprehensive full-body health screening packages designed for early detection of lifestyle and metabolic disorders.</p>
+                        <ul class="service-tests">
+                            <li>Basic Wellness Checkup</li>
+                            <li>Master Executive Health Package</li>
+                            <li>Comprehensive Cardiac Risk Package</li>
+                            <li>Master Women's Wellness & Cancer Screen</li>
+                            <li>Senior Citizen Vitality Screening</li>
+                            <li>Pre-Employment Corporate Screening</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Packages starting from</span>
+                            <span class="service-price-val">₹1,999</span>
+                        </div>
+                    </div>
+
+                    <!-- 9. Dialysis Center -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-pump-medical"></i></div>
+                        <h3>Modern Dialysis Center</h3>
+                        <p>State-of-the-art hemodialysis center with ultrapure water treatment and continuous nephrologist supervision.</p>
+                        <ul class="service-tests">
+                            <li>High-Flux Maintenance Hemodialysis</li>
+                            <li>SLED & CRRT for ICU Patients</li>
+                            <li>Continuous Ambulatory Peritoneal Dialysis (CAPD)</li>
+                            <li>AV Fistula Evaluation & Creation</li>
+                            <li>Infection-Controlled Isolation Dialysis Bays</li>
+                            <li>Renal Nutrition Counseling</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Sessions</span>
+                            <span class="service-price-val">Scheduled & 24/7 Emergency</span>
+                        </div>
+                    </div>
+
+                    <!-- 10. Physiotherapy -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-walking"></i></div>
+                        <h3>Physiotherapy & Rehab</h3>
+                        <p>Targeted rehabilitation therapies for post-surgical recovery, spinal pain relief, stroke rehab, and athletic conditioning.</p>
+                        <ul class="service-tests">
+                            <li>Post-Joint Replacement Rehabilitation</li>
+                            <li>Stroke & Neuro-Rehabilitation</li>
+                            <li>Sports Injury Conditioning</li>
+                            <li>Spine & Chronic Back Pain Therapy</li>
+                            <li>Cardiopulmonary Rehabilitation</li>
+                            <li>Ergonomic Posture Correction</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Session starting from</span>
+                            <span class="service-price-val">₹499</span>
+                        </div>
+                    </div>
+
+                    <!-- 11. Maternity Services -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-baby-carriage"></i></div>
+                        <h3>Maternity & Birthing Suites</h3>
+                        <p>Comfortable, supportive maternity care offering normal delivery, painless epidural labor, and high-risk pregnancy monitoring.</p>
+                        <ul class="service-tests">
+                            <li>Comprehensive Antenatal Care Packages</li>
+                            <li>Luxury LDR (Labor, Delivery, Recovery) Suites</li>
+                            <li>Painless Labor with Epidural Analgesia</li>
+                            <li>Advanced Level III NICU Backup</li>
+                            <li>Lactation Consultation & Postnatal Care</li>
+                            <li>Prenatal Yoga & Lamaze Classes</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Packages</span>
+                            <span class="service-price-val">Comprehensive Care</span>
+                        </div>
+                    </div>
+
+                    <!-- 12. Home Healthcare -->
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i class="fas fa-house-medical"></i></div>
+                        <h3>Home Healthcare Services</h3>
+                        <p>Professional home nursing, doorstep lab sample collection, physician home visits, and medical equipment rental.</p>
+                        <ul class="service-tests">
+                            <li>Free Home Blood Sample Collection</li>
+                            <li>Qualified Home Nursing Care</li>
+                            <li>Physician Home Consultation Visits</li>
+                            <li>Elderly Care & Bedside Attendant Support</li>
+                            <li>Home Physiotherapy Sessions</li>
+                            <li>Oxygen Concentrator & BiPAP Rental</li>
+                        </ul>
+                        <div class="service-price-box">
+                            <span class="service-price-label">Sample Pickup</span>
+                            <span class="service-price-val" style="color:var(--success);">Available at Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preventive Health Package Comparison Table -->
+                <div class="package-table-wrapper reveal">
+                    <table class="package-table" aria-label="Health Checkup Packages Comparison">
+                        <thead>
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Included Tests & Details</th>
+                                <th>Turnaround</th>
+                                <th>Price</th>
+                                <th>Inquiry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Basic Health Screen</strong></td>
+                                <td>CBC, Fasting Blood Sugar, Lipid Profile, Urine Routine, Physician Consultation</td>
+                                <td>Same Day</td>
+                                <td><strong style="color:var(--primary);">₹1,999</strong></td>
+                                <td><a href="contact.html" class="btn btn-primary btn-sm">Inquire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Executive Full Body Screen</strong></td>
+                                <td>CBC, LFT, KFT, Lipid Profile, HbA1c, Thyroid TSH, ECG, Chest X-Ray, Ultrasound Abdomen, Specialist Review</td>
+                                <td>24 Hours</td>
+                                <td><strong style="color:var(--primary);">₹3,999</strong></td>
+                                <td><a href="contact.html" class="btn btn-primary btn-sm">Inquire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comprehensive Cardiac Screen</strong></td>
+                                <td>Executive Panel + 2D Echo, TMT Stress Test, High-Sensitivity Troponin, Cardiologist Consultation</td>
+                                <td>24 Hours</td>
+                                <td><strong style="color:var(--primary);">₹5,499</strong></td>
+                                <td><a href="contact.html" class="btn btn-primary btn-sm">Inquire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Senior Citizen Vitality Screen</strong></td>
+                                <td>Executive Panel + Vitamin D3/B12, Bone Mineral Density (DEXA), Prostate PSA (Men) / Mammogram (Women), Eye & Dental Screen</td>
+                                <td>24 Hours</td>
+                                <td><strong style="color:var(--primary);">₹5,999</strong></td>
+                                <td><a href="contact.html" class="btn btn-primary btn-sm">Inquire</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="services-grid">
-                <!-- Blood Tests -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-vial"></i></div>
-                    <h3>Blood Tests</h3>
-                    <p>Complete blood count, blood chemistry, hormone panels, thyroid function, liver function, kidney
-                        function, and lipid profiles.</p>
-                    <ul class="service-tests">
-                        <li>CBC (Complete Blood Count)</li>
-                        <li>HbA1c & Glucose Tests</li>
-                        <li>Thyroid Panel (T3, T4, TSH)</li>
-                        <li>Liver Function Test (LFT)</li>
-                        <li>Kidney Function Test (KFT)</li>
-                        <li>Lipid Profile</li>
-                        <li>Vitamin D, B12, Iron Studies</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹299</span></div>
-                </div>
+        </section>
 
-                <!-- Imaging & Radiology -->
-                <div class="service-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="service-icon"><i class="fas fa-x-ray"></i></div>
-                    <h3>Imaging & Radiology</h3>
-                    <p>Advanced imaging technology for precise diagnostics including 3T MRI, 128-slice CT, digital
-                        X-ray, and high-resolution ultrasound.</p>
-                    <ul class="service-tests">
-                        <li>3T MRI Scan</li>
-                        <li>128-Slice CT Scan</li>
-                        <li>Digital X-Ray</li>
-                        <li>Ultrasound (3D/4D)</li>
-                        <li>Mammography</li>
-                        <li>Bone Density (DEXA)</li>
-                        <li>PET-CT Scan</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹1,499</span></div>
-                </div>
-
-                <!-- Cardiac Tests -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Cardiac Diagnostics</h3>
-                    <p>Comprehensive cardiac evaluation including ECG, echo, stress tests, and Holter monitoring for
-                        heart health assessment.</p>
-                    <ul class="service-tests">
-                        <li>ECG (Electrocardiogram)</li>
-                        <li>2D Echo with Doppler</li>
-                        <li>TMT (Stress Test)</li>
-                        <li>Holter Monitoring</li>
-                        <li>Cardiac CT Angiography</li>
-                        <li>ABPM (BP Monitoring)</li>
-                        <li>Cardiac Markers</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹599</span></div>
-                </div>
-
-                <!-- Laboratory Services -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-microscope"></i></div>
-                    <h3>Pathology Lab</h3>
-                    <p>NABL accredited laboratory offering comprehensive pathology services with accurate results in
-                        minimal turnaround time.</p>
-                    <ul class="service-tests">
-                        <li>Clinical Pathology</li>
-                        <li>Biochemistry</li>
-                        <li>Microbiology</li>
-                        <li>Histopathology</li>
-                        <li>Cytopathology</li>
-                        <li>Immunology</li>
-                        <li>Molecular Diagnostics</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹199</span></div>
-                </div>
-
-                <!-- Emergency Services -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-ambulance"></i></div>
-                    <h3>24/7 Emergency Care</h3>
-                    <p>Round-the-clock emergency services with trauma center, ICU, and ambulance services for immediate
-                        medical attention.</p>
-                    <ul class="service-tests">
-                        <li>Emergency Department</li>
-                        <li>Trauma Care Center</li>
-                        <li>ICU & CCU</li>
-                        <li>Ambulance Service (108)</li>
-                        <li>Critical Care</li>
-                        <li>Emergency Surgery</li>
-                        <li>Poison Control</li>
-                    </ul>
-                    <div class="service-price">Available <span>24/7</span></div>
-                </div>
-
-                <!-- Surgery Services -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-procedures"></i></div>
-                    <h3>Surgical Services</h3>
-                    <p>Advanced surgical facilities with robotic surgery, minimally invasive procedures, and expert
-                        surgical teams across specialties.</p>
-                    <ul class="service-tests">
-                        <li>Robotic Surgery</li>
-                        <li>Laparoscopic Surgery</li>
-                        <li>General Surgery</li>
-                        <li>Cardiac Surgery</li>
-                        <li>Neuro Surgery</li>
-                        <li>Orthopedic Surgery</li>
-                        <li>Day Care Surgery</li>
-                    </ul>
-                    <div class="service-price">Consultation <span>Required</span></div>
-                </div>
-
-                <!-- Pharmacy -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pills"></i></div>
-                    <h3>24/7 Pharmacy</h3>
-                    <p>In-house pharmacy stocked with all essential medicines, surgical supplies, and medical equipment
-                        available round the clock.</p>
-                    <ul class="service-tests">
-                        <li>Prescription Medicines</li>
-                        <li>OTC Drugs</li>
-                        <li>Surgical Supplies</li>
-                        <li>Medical Equipment</li>
-                        <li>Health Supplements</li>
-                        <li>Home Delivery</li>
-                        <li>Generic Medicines</li>
-                    </ul>
-                    <div class="service-price">Available <span>24/7</span></div>
-                </div>
-
-                <!-- Health Checkup -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
-                    <h3>Health Checkup Packages</h3>
-                    <p>Comprehensive health screening packages for individuals and families with personalized health
-                        assessment reports.</p>
-                    <ul class="service-tests">
-                        <li>Basic Health Checkup</li>
-                        <li>Executive Checkup</li>
-                        <li>Cardiac Screening</li>
-                        <li>Diabetes Package</li>
-                        <li>Women's Health Package</li>
-                        <li>Senior Citizen Package</li>
-                        <li>Pre-Employment Checkup</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹1,999</span></div>
-                </div>
-
-                <!-- Dialysis -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-pump-medical"></i></div>
-                    <h3>Dialysis Center</h3>
-                    <p>Modern dialysis center with advanced machines and experienced nephrologists providing
-                        hemodialysis and peritoneal dialysis.</p>
-                    <ul class="service-tests">
-                        <li>Hemodialysis</li>
-                        <li>Peritoneal Dialysis</li>
-                        <li>Emergency Dialysis</li>
-                        <li>AV Fistula Creation</li>
-                        <li>Dialysis for Children</li>
-                        <li>Kidney Transplant Support</li>
-                        <li>Nutritional Counseling</li>
-                    </ul>
-                    <div class="service-price">Consultation <span>Required</span></div>
-                </div>
-
-                <!-- Physiotherapy -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-walking"></i></div>
-                    <h3>Physiotherapy & Rehabilitation</h3>
-                    <p>Comprehensive rehabilitation services for post-surgery recovery, sports injuries, and chronic
-                        pain management.</p>
-                    <ul class="service-tests">
-                        <li>Post-Surgery Rehab</li>
-                        <li>Sports Injury Care</li>
-                        <li>Stroke Rehabilitation</li>
-                        <li>Pain Management</li>
-                        <li>Cardiac Rehabilitation</li>
-                        <li>Pediatric Physio</li>
-                        <li>Occupational Therapy</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹499</span></div>
-                </div>
-
-                <!-- Maternity Services -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-baby-carriage"></i></div>
-                    <h3>Maternity Care</h3>
-                    <p>Complete maternity services including prenatal care, normal and C-section deliveries, NICU, and
-                        postnatal care.</p>
-                    <ul class="service-tests">
-                        <li>Antenatal Care</li>
-                        <li>Normal Delivery</li>
-                        <li>Cesarean Section</li>
-                        <li>High-Risk Pregnancy</li>
-                        <li>NICU Level III</li>
-                        <li>Lactation Support</li>
-                        <li>Postnatal Care</li>
-                    </ul>
-                    <div class="service-price">Package <span>Available</span></div>
-                </div>
-
-                <!-- Home Healthcare -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-home"></i></div>
-                    <h3>Home Healthcare</h3>
-                    <p>Professional home healthcare services including nursing care, physiotherapy, and medical
-                        equipment rental at home.</p>
-                    <ul class="service-tests">
-                        <li>Home Nursing Care</li>
-                        <li>Doctor Visit at Home</li>
-                        <li>Home Sample Collection</li>
-                        <li>Post-Surgery Care</li>
-                        <li>Elderly Care</li>
-                        <li>Medical Equipment Rental</li>
-                        <li>IV Therapy at Home</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹799</span></div>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Inquire About Diagnostic Tests or Health Packages</h2>
+                    <p>Contact our medical diagnostics center or reach out to our team for questions regarding test availability and reports.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Contact Us
+                        </a>
+                        <a href="tel:+911234567890" class="btn btn-outline btn-lg">
+                            <i class="fas fa-phone-alt"></i> Call +91 123 456 7890
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section features-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label"><span></span> Why Choose Us</div>
-                <h2 class="section-title">World-Class <span class="gradient-text">Healthcare Facilities</span></h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-award"></i></div>
-                    <h3>NABL & NABH Accredited</h3>
-                    <p>International quality standards for reliable results</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-user-md"></i></div>
-                    <h3>Expert Doctors</h3>
-                    <p>200+ highly qualified medical professionals</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-hospital"></i></div>
-                    <h3>Advanced Technology</h3>
-                    <p>State-of-the-art medical equipment</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
-                    <h3>24/7 Services</h3>
-                    <p>Round-the-clock emergency and support</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need a Medical Service?</h2>
-                <p>Book an appointment or test today and experience world-class healthcare services.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calendar-check"></i> Book Appointment
-                    </a>
-                    <a href="tel:+911234567890" class="btn btn-outline btn-lg">
-                        <i class="fas fa-phone-alt"></i> Call +91 123 456 7890
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>MZH Hospisol</h3>
-                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
-                        advanced diagnostics with compassionate care.</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="MZH Hospisol" width="220" height="72">
+                    </div>
+                    <p class="footer-desc">
+                        MZH Hospisol is a nationally and internationally accredited multi-specialty healthcare institution offering compassionate healing, cutting-edge diagnostics, and precision surgical care.
+                    </p>
                     <div class="footer-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
+                    <div class="footer-links-list">
+                        <a href="index.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> About Us</a>
+                        <a href="departments.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Departments</a>
+                        <a href="doctors.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Our Doctors</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Services</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Contact Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Emergency Care</a></li>
-                        <li><a href="services.html">Diagnostics</a></li>
-                        <li><a href="services.html">Surgery</a></li>
-                        <li><a href="services.html">Pharmacy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <div class="footer-links-list">
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Emergency Care</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Diagnostic Pathology</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 3T MRI & CT Scans</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Robotic Surgery</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Pharmacy</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Health Checkup Packages</a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
-                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Street, Healthcare City, State - 123456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+911234567890">+91 123 456 7890</a> (24/7 Line)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>OPD: Mon–Sat (9 AM – 7 PM) | Emergency: 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-box">
+                        <p>Subscribe for health tips & news:</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
-                        of Service</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. JCI & NABH Accredited Healthcare Provider.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Rights</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Emergency Floating Trigger -->
+    <a href="tel:+911234567890" class="floating-emergency" aria-label="Call Emergency Hotline">
+        <i class="fas fa-phone-alt"></i> <span>24/7 Emergency</span>
+    </a>
+
+    <!-- Interactive Script -->
     <script src="script.js"></script>
 </body>
 

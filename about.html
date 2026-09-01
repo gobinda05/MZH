@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Learn about MZH Hospisol - 25+ years of excellence in healthcare with world-class facilities and compassionate medical care.">
-    <title>About Us | MZH Hospisol</title>
+        content="Learn about MZH Hospisol - 25+ years of excellence in healthcare with world-class medical facilities, JCI & NABH accreditation, and compassionate care.">
+    <title>About Us | MZH Hospisol - 25+ Years of Healthcare Excellence</title>
+    
+    <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.svg" alt="MZH Hospisol">
+            <a href="index.html" class="nav-logo" aria-label="MZH Hospisol Home">
+                <img src="logo.svg" alt="MZH Hospisol Logo" width="200" height="64">
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link active">About</a></li>
@@ -34,254 +44,378 @@
                 <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                
+                <li class="nav-mobile-footer">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-emergency btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call 24/7 Hotline
+                    </a>
+                </li>
             </ul>
-            <a href="contact.html" class="nav-cta">
-                <i class="fas fa-phone-alt"></i> Contact Us
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact Us
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <h1 class="page-title">About MZH Hospisol</h1>
-            <p class="page-subtitle">25+ Years of Excellence in Healthcare</p>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About Us</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header Banner -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <h1 class="page-title">About MZH Hospisol</h1>
+                <p class="page-subtitle">25+ Years of Trust, Compassion & Medical Excellence</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>About Us</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Content -->
-    <section class="section about-full">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/medical-team.png" alt="MZH Hospisol Medical Team">
-                    <div class="about-experience-badge">
-                        <span class="experience-number">25+</span>
-                        <span class="experience-text">Years of<br>Excellence</span>
+        <!-- Our Story / Full About Section -->
+        <section class="section about-full">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal">
+                        <img src="images/medical-team.png" alt="MZH Hospisol Senior Consultants and Healthcare Leaders" loading="lazy">
+                        <div class="about-experience-badge">
+                            <span class="experience-number">25+</span>
+                            <span class="experience-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                    <div class="about-content reveal">
+                        <div class="section-label">
+                            <i class="fas fa-history"></i> Our Heritage & Story
+                        </div>
+                        <h2 class="section-title">A Legacy of Healing & <span class="gradient-text">Technological Innovation</span></h2>
+                        <p class="about-text">
+                            Established in 1999 with a foundational mission to make international-standard medical care accessible to every citizen, MZH Hospisol has grown from a humble 50-bed community clinic into a benchmark 500+ bed tertiary healthcare powerhouse.
+                        </p>
+                        <p class="about-text">
+                            Our state-of-the-art campus brings together over 200 world-class surgical specialists, medical oncologists, interventional cardiologists, and pediatric intensivists. Equipped with AI-assisted diagnostics, 3T MRI, 128-slice CT, and robotic surgery, we deliver treatment with unparalleled clinical accuracy.
+                        </p>
+                        <p class="about-text">
+                            Above all, we maintain an unwavering commitment to patient dignity, transparency, and warmth — treating every individual not just as a patient, but as family.
+                        </p>
                     </div>
                 </div>
-                <div class="about-content">
-                    <div class="section-label">
-                        <span></span> Our Story
+            </div>
+        </section>
+
+        <!-- Mission, Vision & Values -->
+        <section class="section mission-vision">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-compass"></i> Guiding Principles</div>
+                    <h2 class="section-title">Our Mission, Vision & <span class="gradient-text">Core Values</span></h2>
+                    <p class="section-subtitle">The foundational ethical principles that shape our clinical decisions, patient care, and community outreach every single day.</p>
+                </div>
+
+                <div class="mv-grid">
+                    <div class="mv-card reveal">
+                        <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To deliver compassionate, world-class healthcare of the highest clinical standards that restores health, relieves suffering, and enriches human life through medical innovation, education, and ethical clinical practice.
+                        </p>
                     </div>
-                    <h2 class="section-title">Pioneering Healthcare With <span class="gradient-text">Heart &
-                            Innovation</span></h2>
-                    <p class="about-text">
-                        Founded in 1999, MZH Hospisol has grown from a modest 50-bed facility to a comprehensive 500+
-                        bed multi-specialty hospital that proudly serves over 1 million patients annually. Our journey
-                        has been marked by an unwavering commitment to combining compassionate care with cutting-edge
-                        medical technology.
-                    </p>
-                    <p class="about-text">
-                        We bring together the finest medical minds, the latest technology, and a patient-first approach
-                        to deliver healthcare that truly makes a difference. Our hospital is equipped with advanced
-                        robotic surgery systems, AI-powered diagnostics, comprehensive digital health records, and
-                        state-of-the-art medical equipment.
-                    </p>
-                    <p class="about-text">
-                        Today, MZH Hospisol stands as a beacon of hope and healing, recognized nationally and
-                        internationally for our excellence in patient care, medical innovation, and research
-                        contributions.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Mission & Vision -->
-    <section class="section mission-vision">
-        <div class="container">
-            <div class="mv-grid">
-                <div class="mv-card">
-                    <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
-                    <h3>Our Mission</h3>
-                    <p>To provide compassionate, high-quality healthcare services that improve the health and well-being
-                        of our patients and community through excellence in clinical care, education, and research.</p>
-                </div>
-                <div class="mv-card">
-                    <div class="mv-icon"><i class="fas fa-eye"></i></div>
-                    <h3>Our Vision</h3>
-                    <p>To be the most trusted and preferred healthcare provider, recognized for clinical excellence,
-                        innovation, and patient-centered care that transforms lives and sets new standards in medical
-                        practice.</p>
-                </div>
-                <div class="mv-card">
-                    <div class="mv-icon"><i class="fas fa-heart"></i></div>
-                    <h3>Our Values</h3>
-                    <p>Compassion, Integrity, Excellence, Innovation, Respect, Teamwork, and Safety - guiding every
-                        decision we make and every action we take in service of our patients and community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="mv-card reveal">
+                        <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To be recognized as the nation's most trusted, patient-centric healthcare destination, renowned internationally for breakthroughs in robotic surgery, clinical research, patient safety, and compassionate healing.
+                        </p>
+                    </div>
 
-    <!-- Achievements -->
-    <section class="section achievements">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label"><span></span> Achievements</div>
-                <h2 class="section-title">Our <span class="gradient-text">Milestones</span></h2>
-                <p class="section-subtitle">Celebrating excellence and innovation in healthcare delivery</p>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
-                    <h4>JCI Accreditation</h4>
-                    <p>International recognition for quality and patient safety standards</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
-                    <h4>Best Hospital Award 2023</h4>
-                    <p>National Healthcare Excellence Awards</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
-                    <h4>NABL Certified Labs</h4>
-                    <p>Ensuring accurate and reliable test results</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
-                    <h4>NABH Accreditation</h4>
-                    <p>Excellence in healthcare service quality</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
-                    <h4>Green Hospital Certification</h4>
-                    <p>Commitment to environmental sustainability</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h4>Innovation in Healthcare</h4>
-                    <p>Pioneering robotic surgery and AI diagnostics</p>
+                    <div class="mv-card reveal">
+                        <div class="mv-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Our Values</h3>
+                        <p>
+                            Integrity, Compassion, Clinical Excellence, Transparency, Respect for all, and Uncompromising Patient Safety. These core principles drive every decision and action at MZH Hospisol.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-procedures"></i></div>
-                    <div class="stat-number">500</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Hospital Beds</div>
+        <!-- Achievements & Milestones -->
+        <section class="section achievements">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-award"></i> Quality Recognition</div>
+                    <h2 class="section-title">Accreditations & <span class="gradient-text">Milestones</span></h2>
+                    <p class="section-subtitle">National and global endorsements demonstrating our adherence to the most rigorous healthcare safety and quality benchmarks.</p>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-user-md"></i></div>
-                    <div class="stat-number">200</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Expert Doctors</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-heartbeat"></i></div>
-                    <div class="stat-number">50K</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Surgeries Done</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
-                    <div class="stat-number">1M</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Happy Patients</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-building"></i></div>
-                    <div class="stat-number">30</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Departments</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fas fa-award"></i></div>
-                    <div class="stat-number">45</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Awards Won</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Experience World-Class Healthcare?</h2>
-                <p>Join thousands of satisfied patients who trust MZH Hospisol for their healthcare needs.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calendar-check"></i> Book Appointment
-                    </a>
-                    <a href="departments.html" class="btn btn-outline btn-lg">
-                        <i class="fas fa-stethoscope"></i> View Departments
-                    </a>
+                <div class="achievements-grid">
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>JCI Accreditation</h4>
+                        <p>Recognized by Joint Commission International (USA) for gold-standard clinical safety and patient care protocols.</p>
+                    </div>
+
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-hospital-alt"></i></div>
+                        <h4>NABH Accredited</h4>
+                        <p>Certified by the National Accreditation Board for Hospitals & Healthcare Providers for quality benchmarks.</p>
+                    </div>
+
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-vials"></i></div>
+                        <h4>NABL Certified Labs</h4>
+                        <p>Accredited diagnostic pathology and molecular biology labs guaranteeing precise, reproducible test results.</p>
+                    </div>
+
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <h4>Best Multi-Specialty Award</h4>
+                        <p>Honored as the "Best Multi-Specialty Hospital of the Year" at the National Healthcare Leadership Summit.</p>
+                    </div>
+
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-leaf"></i></div>
+                        <h4>Green Hospital Certified</h4>
+                        <p>Eco-friendly, energy-efficient healthcare campus with solar power generation and zero liquid discharge systems.</p>
+                    </div>
+
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon"><i class="fas fa-microchip"></i></div>
+                        <h4>AI Diagnostics Pioneer</h4>
+                        <p>Pioneering the integration of AI-assisted radiological imaging and robotic surgical systems for early disease detection.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-procedures"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="500">500</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Hospital Beds</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="200">200</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Expert Doctors</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="50000">50,000</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Surgeries Done</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="1000000">1,000,000</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-hospital"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="30">30</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Departments</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="45">45</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQ Accordion -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-circle-question"></i> Help & FAQs</div>
+                    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                    <p class="section-subtitle">Answers to common queries about hospital admissions, emergency protocol, and insurance partnerships.</p>
+                </div>
+
+                <div class="faq-list reveal">
+                    <details class="faq-item" name="hospital-faq" open>
+                        <summary>What insurance providers and cashless TPA facilities do you accept?</summary>
+                        <div class="faq-content">
+                            MZH Hospisol is empaneled with over 35+ major health insurance companies and all leading Third-Party Administrators (TPAs), including Star Health, HDFC ERGO, ICICI Lombard, Max Bupa, Medi Assist, and CGHS/ECHS. We offer 24/7 dedicated cashless hospitalization desks to facilitate smooth pre-authorization and discharge.
+                        </div>
+                    </details>
+
+                    <details class="faq-item" name="hospital-faq">
+                        <summary>How can I reach out to a medical specialist?</summary>
+                        <div class="faq-content">
+                            You can reach out through our <a href="contact.html" style="color:var(--primary); font-weight:700;">Contact Portal</a>, call our 24/7 helpline at <a href="tel:+911234567890" style="color:var(--primary); font-weight:700;">+91 123 456 7890</a>, or visit our hospital information desk from Monday through Saturday (9:00 AM to 7:00 PM).
+                        </div>
+                    </details>
+
+                    <details class="faq-item" name="hospital-faq">
+                        <summary>What emergency services and trauma support are available?</summary>
+                        <div class="faq-content">
+                            Our Level 1 Trauma Center, Emergency Resuscitation Unit, Cardiac Cath Lab, and Advanced Cardiac Life Support (ACLS) ambulances are operational 24 hours a day, 365 days a year. Our emergency response team includes board-certified trauma surgeons, emergency physicians, and critical care intensivists.
+                        </div>
+                    </details>
+
+                    <details class="faq-item" name="hospital-faq">
+                        <summary>Are diagnostic test reports available online?</summary>
+                        <div class="faq-content">
+                            Yes! All pathology, biochemistry, and radiology reports (MRI, CT, X-ray, Ultrasound) are securely delivered via SMS and email with an online digital health portal login for easy download, sharing, and storage.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Experience Healthcare That Puts You First</h2>
+                    <p>Connect with our expert team of specialists for second opinions, diagnostics, or personalized medical care.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Contact Us
+                        </a>
+                        <a href="departments.html" class="btn btn-outline btn-lg">
+                            <i class="fas fa-stethoscope"></i> View Departments
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>MZH Hospisol</h3>
-                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
-                        advanced diagnostics with compassionate care.</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="MZH Hospisol" width="220" height="72">
+                    </div>
+                    <p class="footer-desc">
+                        MZH Hospisol is a nationally and internationally accredited multi-specialty healthcare institution offering compassionate healing, cutting-edge diagnostics, and precision surgical care.
+                    </p>
                     <div class="footer-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
+                    <div class="footer-links-list">
+                        <a href="index.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> About Us</a>
+                        <a href="departments.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Departments</a>
+                        <a href="doctors.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Our Doctors</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Services</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Contact Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Emergency Care</a></li>
-                        <li><a href="services.html">Diagnostics</a></li>
-                        <li><a href="services.html">Surgery</a></li>
-                        <li><a href="services.html">Pharmacy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <div class="footer-links-list">
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Emergency Care</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Diagnostic Pathology</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 3T MRI & CT Scans</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Robotic Surgery</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Pharmacy</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Health Checkup Packages</a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
-                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Street, Healthcare City, State - 123456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+911234567890">+91 123 456 7890</a> (24/7 Line)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>OPD: Mon–Sat (9 AM – 7 PM) | Emergency: 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-box">
+                        <p>Subscribe for health tips & news:</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
-                        of Service</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. JCI & NABH Accredited Healthcare Provider.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Rights</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Emergency Floating Trigger -->
+    <a href="tel:+911234567890" class="floating-emergency" aria-label="Call Emergency Hotline">
+        <i class="fas fa-phone-alt"></i> <span>24/7 Emergency</span>
+    </a>
+
+    <!-- Interactive Script -->
     <script src="script.js"></script>
 </body>
 

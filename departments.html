@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore MZH Hospisol's comprehensive medical departments with expert doctors and advanced facilities.">
-    <title>Departments | MZH Hospisol</title>
+        content="Explore MZH Hospisol's 30+ specialized clinical departments with expert consultants, advanced surgical theaters, and modern diagnostic facilities.">
+    <title>Our Departments | MZH Hospisol - 30+ Specialized Medical Divisions</title>
+    
+    <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.svg" alt="MZH Hospisol">
+            <a href="index.html" class="nav-logo" aria-label="MZH Hospisol Home">
+                <img src="logo.svg" alt="MZH Hospisol Logo" width="200" height="64">
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -34,318 +44,352 @@
                 <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                
+                <li class="nav-mobile-footer">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-emergency btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call 24/7 Hotline
+                    </a>
+                </li>
             </ul>
-            <a href="contact.html" class="nav-cta">
-                <i class="fas fa-phone-alt"></i> Contact Us
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact Us
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <h1 class="page-title">Our Departments</h1>
-            <p class="page-subtitle">Comprehensive Medical Specialties Under One Roof</p>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Departments</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header Banner -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <h1 class="page-title">Specialized Departments</h1>
+                <p class="page-subtitle">Comprehensive Clinical Excellence & Tertiary Care Specializations</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Departments</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Departments Section -->
-    <section class="section departments">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label"><span></span> Medical Excellence</div>
-                <h2 class="section-title">30+ Specialized <span class="gradient-text">Departments</span></h2>
-                <p class="section-subtitle">Each department is staffed with experienced physicians and equipped with
-                    state-of-the-art medical technology to provide exceptional care.</p>
-            </div>
-            <div class="departments-grid">
-                <!-- Cardiology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Cardiology</h3>
-                    <p>Advanced cardiac care including angioplasty, bypass surgery, pacemaker implantation, and
-                        comprehensive cardiac rehabilitation programs.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Cardiac Catheterization Lab</li>
-                        <li><i class="fas fa-check"></i> Echocardiography</li>
-                        <li><i class="fas fa-check"></i> Heart Failure Clinic</li>
-                        <li><i class="fas fa-check"></i> 24/7 Emergency Cardiac Care</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
+        <!-- Departments Section with Instant Search Filter -->
+        <section class="section departments">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-stethoscope"></i> Clinical Specialties</div>
+                    <h2 class="section-title">30+ Medical & Surgical <span class="gradient-text">Departments</span></h2>
+                    <p class="section-subtitle">Every department is staffed by senior specialists and equipped with advanced diagnostic and operative facilities.</p>
                 </div>
 
-                <!-- Neurology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Neurology & Neurosurgery</h3>
-                    <p>Expert care for brain, spinal cord, and nervous system disorders including stroke, epilepsy,
-                        Parkinson's, and neurodegenerative diseases.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Stroke Unit</li>
-                        <li><i class="fas fa-check"></i> Epilepsy Monitoring</li>
-                        <li><i class="fas fa-check"></i> Neuro Rehabilitation</li>
-                        <li><i class="fas fa-check"></i> Advanced Brain Surgery</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
+                <!-- Instant Search Bar -->
+                <div class="filter-search-bar reveal">
+                    <i class="fas fa-search filter-search-icon"></i>
+                    <input type="text" id="deptSearch" class="filter-search-input" placeholder="Search department, procedure, or medical condition (e.g. Heart, Knee, Eye, Cancer)...">
                 </div>
 
-                <!-- Orthopedics -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-bone"></i>
+                <div class="departments-grid">
+                    <!-- 1. Cardiology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <h3>Cardiology & Heart Institute</h3>
+                        <p>Comprehensive cardiac care including interventional angioplasty, coronary artery bypass grafting (CABG), valve replacements, and 24/7 primary angioplasty.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Biplane Cardiac Catheterization Lab</li>
+                            <li><i class="fas fa-check"></i> 2D / 3D Echocardiography & TMT</li>
+                            <li><i class="fas fa-check"></i> Specialized Heart Failure Clinic</li>
+                            <li><i class="fas fa-check"></i> 24/7 Emergency Cardiac Resuscitation</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Orthopedics</h3>
-                    <p>Complete bone and joint care including joint replacements, sports medicine, spine surgery,
-                        arthroscopy, and trauma management.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Joint Replacement Surgery</li>
-                        <li><i class="fas fa-check"></i> Sports Medicine</li>
-                        <li><i class="fas fa-check"></i> Spine Surgery Center</li>
-                        <li><i class="fas fa-check"></i> Arthroscopic Surgery</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Pediatrics -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-baby"></i>
+                    <!-- 2. Neurology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Neurology & Neurosurgery</h3>
+                        <p>Comprehensive care for brain, spine, and nervous system disorders including stroke thrombolysis, neuro-endoscopy, epilepsy, and Parkinson's management.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Dedicated Acute Stroke Care Unit</li>
+                            <li><i class="fas fa-check"></i> Micro-Neurosurgical Operating Suite</li>
+                            <li><i class="fas fa-check"></i> Neuro-Electrophysiology & EEG Lab</li>
+                            <li><i class="fas fa-check"></i> Neuro-Rehabilitation Therapy</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Pediatrics</h3>
-                    <p>Comprehensive child healthcare from newborn care to adolescent medicine, including pediatric
-                        surgery and NICU facilities.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Neonatal ICU (NICU)</li>
-                        <li><i class="fas fa-check"></i> Pediatric Surgery</li>
-                        <li><i class="fas fa-check"></i> Vaccination Center</li>
-                        <li><i class="fas fa-check"></i> Child Development Clinic</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Oncology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-ribbon"></i>
+                    <!-- 3. Orthopedics -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-bone"></i></div>
+                        <h3>Orthopedics & Joint Replacement</h3>
+                        <p>Robotic joint replacement surgery, advanced arthroscopic ligament reconstructions, spinal deformity corrections, and high-energy polytrauma care.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Robotic Knee & Hip Replacement</li>
+                            <li><i class="fas fa-check"></i> Minimally Invasive Spine Surgery</li>
+                            <li><i class="fas fa-check"></i> Sports Medicine & Arthroscopy</li>
+                            <li><i class="fas fa-check"></i> Complex Trauma Care Center</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Oncology</h3>
-                    <p>Comprehensive cancer care with medical, surgical, and radiation oncology. Advanced chemotherapy
-                        and immunotherapy treatments.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Chemotherapy Unit</li>
-                        <li><i class="fas fa-check"></i> Radiation Therapy</li>
-                        <li><i class="fas fa-check"></i> Tumor Board</li>
-                        <li><i class="fas fa-check"></i> Palliative Care</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Gynecology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-venus"></i>
+                    <!-- 4. Pediatrics -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Pediatrics & Neonatology</h3>
+                        <p>Holistic healthcare for newborns, infants, and adolescents, backed by a Level III Neonatal ICU (NICU) and dedicated pediatric intensive care.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Level III Neonatal ICU (NICU)</li>
+                            <li><i class="fas fa-check"></i> Pediatric Surgery & Cardiology</li>
+                            <li><i class="fas fa-check"></i> Comprehensive Immunization Clinic</li>
+                            <li><i class="fas fa-check"></i> Child Growth & Development Center</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Gynecology & Obstetrics</h3>
-                    <p>Complete women's health services including prenatal care, high-risk pregnancy management, and
-                        minimally invasive surgery.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> High-Risk Pregnancy</li>
-                        <li><i class="fas fa-check"></i> IVF Center</li>
-                        <li><i class="fas fa-check"></i> Laparoscopic Surgery</li>
-                        <li><i class="fas fa-check"></i> Women's Health Clinic</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Pulmonology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-lungs"></i>
+                    <!-- 5. Oncology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-ribbon"></i></div>
+                        <h3>Comprehensive Oncology</h3>
+                        <p>State-of-the-art cancer institute offering integrated surgical oncology, medical oncology, targeted immunotherapy, and radiation therapy with tumor boards.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Day-Care Chemotherapy Suite</li>
+                            <li><i class="fas fa-check"></i> Linear Accelerator Radiation</li>
+                            <li><i class="fas fa-check"></i> Multi-Disciplinary Tumor Board</li>
+                            <li><i class="fas fa-check"></i> Palliative & Supportive Care</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Pulmonology</h3>
-                    <p>Respiratory care for asthma, COPD, pneumonia, lung cancer, and sleep disorders with advanced
-                        pulmonary function testing.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Pulmonary Function Lab</li>
-                        <li><i class="fas fa-check"></i> Sleep Study Center</li>
-                        <li><i class="fas fa-check"></i> Bronchoscopy Suite</li>
-                        <li><i class="fas fa-check"></i> TB Treatment Center</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Ophthalmology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-eye"></i>
+                    <!-- 6. Gynecology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-venus"></i></div>
+                        <h3>Gynecology & Obstetrics</h3>
+                        <p>Complete women's healthcare covering prenatal maternity care, high-risk pregnancy monitoring, natural painless labor, and fertility IVF solutions.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> High-Risk Pregnancy Center</li>
+                            <li><i class="fas fa-check"></i> Advanced IVF & Fertility Suite</li>
+                            <li><i class="fas fa-check"></i> 3D Laparoscopic Gynecological Surgery</li>
+                            <li><i class="fas fa-check"></i> Well-Woman Preventive Screening</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Ophthalmology</h3>
-                    <p>Advanced eye care including LASIK, cataract surgery, retina treatment, glaucoma management, and
-                        pediatric ophthalmology.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> LASIK Surgery</li>
-                        <li><i class="fas fa-check"></i> Retina Clinic</li>
-                        <li><i class="fas fa-check"></i> Glaucoma Center</li>
-                        <li><i class="fas fa-check"></i> Pediatric Eye Care</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Nephrology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-kidneys"></i>
+                    <!-- 7. Pulmonology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-lungs"></i></div>
+                        <h3>Pulmonology & Chest Medicine</h3>
+                        <p>Specialized respiratory care for asthma, COPD, pneumonia, interstitial lung disease, and sleep disorders with advanced pulmonary function testing.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Computerized PFT Laboratory</li>
+                            <li><i class="fas fa-check"></i> Video Bronchoscopy Suite</li>
+                            <li><i class="fas fa-check"></i> Polysomnography Sleep Lab</li>
+                            <li><i class="fas fa-check"></i> Dedicated Respiratory ICU</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Nephrology & Urology</h3>
-                    <p>Complete kidney care including dialysis, kidney transplant, stone management, and urological
-                        surgeries.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Dialysis Center</li>
-                        <li><i class="fas fa-check"></i> Kidney Transplant</li>
-                        <li><i class="fas fa-check"></i> Lithotripsy</li>
-                        <li><i class="fas fa-check"></i> Prostate Care</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Gastroenterology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-stomach"></i>
+                    <!-- 8. Ophthalmology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Ophthalmology & Eye Care</h3>
+                        <p>Precision microsurgery for cataract (Phacoemulsification), blade-free LASIK refractive surgery, medical retina management, and glaucoma laser therapies.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Blade-Free LASIK Laser Center</li>
+                            <li><i class="fas fa-check"></i> Micro-Incision Cataract Surgery</li>
+                            <li><i class="fas fa-check"></i> Vitreo-Retinal Laser & Surgery</li>
+                            <li><i class="fas fa-check"></i> Pediatric Strabismus Clinic</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Gastroenterology</h3>
-                    <p>Digestive system care including endoscopy, colonoscopy, liver disease management, and
-                        inflammatory bowel disease treatment.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Endoscopy Suite</li>
-                        <li><i class="fas fa-check"></i> Liver Clinic</li>
-                        <li><i class="fas fa-check"></i> IBD Management</li>
-                        <li><i class="fas fa-check"></i> Advanced GI Surgery</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- ENT -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-ear-listen"></i>
+                    <!-- 9. Nephrology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-hospital-user"></i></div>
+                        <h3>Nephrology & Urology</h3>
+                        <p>Complete renal care including 24/7 modern hemodialysis, kidney transplantation, laser lithotripsy for kidney stones, and prostate laser resection.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> 24/7 High-Flux Hemodialysis Center</li>
+                            <li><i class="fas fa-check"></i> Renal Transplantation Program</li>
+                            <li><i class="fas fa-check"></i> Holmium Laser Lithotripsy (RIRS)</li>
+                            <li><i class="fas fa-check"></i> Urodynamic Diagnostic Lab</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>ENT (Ear, Nose & Throat)</h3>
-                    <p>Complete ENT care including sinus surgery, hearing solutions, voice disorders, and head and neck
-                        cancer treatment.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Endoscopic Sinus Surgery</li>
-                        <li><i class="fas fa-check"></i> Hearing Aid Center</li>
-                        <li><i class="fas fa-check"></i> Voice Clinic</li>
-                        <li><i class="fas fa-check"></i> Sleep Apnea Treatment</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
-                </div>
 
-                <!-- Dermatology -->
-                <div class="dept-card">
-                    <div class="dept-icon">
-                        <i class="fas fa-hand-sparkles"></i>
+                    <!-- 10. Gastroenterology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Gastroenterology & GI Surgery</h3>
+                        <p>Comprehensive digestive tract and liver disease management with high-definition diagnostic and therapeutic endoscopy, colonoscopy, and ERCP.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> HD Endoscopy & Colonoscopy Suite</li>
+                            <li><i class="fas fa-check"></i> Therapeutic ERCP & EUS</li>
+                            <li><i class="fas fa-check"></i> Specialized Liver Disease & IBD Unit</li>
+                            <li><i class="fas fa-check"></i> Laparoscopic Bariatric & GI Surgery</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <h3>Dermatology</h3>
-                    <p>Skin, hair, and nail care including medical and cosmetic dermatology, laser treatments, and skin
-                        cancer management.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Laser Treatment</li>
-                        <li><i class="fas fa-check"></i> Cosmetic Dermatology</li>
-                        <li><i class="fas fa-check"></i> Hair Treatment</li>
-                        <li><i class="fas fa-check"></i> Skin Cancer Screening</li>
-                    </ul>
-                    <a href="contact.html" class="dept-link">Book Appointment <i class="fas fa-arrow-right"></i></a>
+
+                    <!-- 11. ENT -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-head-side-cough"></i></div>
+                        <h3>ENT & Head-Neck Surgery</h3>
+                        <p>Advanced diagnostic and surgical solutions for ear, nose, throat, and sinus disorders including endoscopic sinus surgery (FESS) and cochlear implants.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Endoscopic Sinus Surgery (FESS)</li>
+                            <li><i class="fas fa-check"></i> Audiology & Hearing Aid Clinic</li>
+                            <li><i class="fas fa-check"></i> Micro-Laryngeal Voice Surgery</li>
+                            <li><i class="fas fa-check"></i> Snoring & Sleep Apnea Surgery</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- 12. Dermatology -->
+                    <div class="dept-card reveal">
+                        <div class="dept-icon"><i class="fas fa-sparkles"></i></div>
+                        <h3>Dermatology & Cosmetology</h3>
+                        <p>Expert clinical dermatology for skin conditions, allergy testing, laser therapies, hair restoration, and medical-grade aesthetic procedures.</p>
+                        <ul class="dept-features">
+                            <li><i class="fas fa-check"></i> Advanced Medical Laser Center</li>
+                            <li><i class="fas fa-check"></i> Phototherapy for Psoriasis & Vitiligo</li>
+                            <li><i class="fas fa-check"></i> Hair Loss & PRP Therapy</li>
+                            <li><i class="fas fa-check"></i> Dermatosurgery & Skin Biopsy</li>
+                        </ul>
+                        <a href="contact.html" class="dept-link">Inquire Department <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need a Specialist Consultation?</h2>
-                <p>Book an appointment with our expert doctors across all specialties.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calendar-check"></i> Book Appointment
-                    </a>
-                    <a href="doctors.html" class="btn btn-outline btn-lg">
-                        <i class="fas fa-user-md"></i> View Our Doctors
-                    </a>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Need Specialist Medical Guidance?</h2>
+                    <p>Our multidisciplinary team of medical specialists is available for inquiries, consultations, and second opinions.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Contact Us
+                        </a>
+                        <a href="doctors.html" class="btn btn-outline btn-lg">
+                            <i class="fas fa-user-md"></i> View Our Doctors
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>MZH Hospisol</h3>
-                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
-                        advanced diagnostics with compassionate care.</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="MZH Hospisol" width="220" height="72">
+                    </div>
+                    <p class="footer-desc">
+                        MZH Hospisol is a nationally and internationally accredited multi-specialty healthcare institution offering compassionate healing, cutting-edge diagnostics, and precision surgical care.
+                    </p>
                     <div class="footer-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
+                    <div class="footer-links-list">
+                        <a href="index.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> About Us</a>
+                        <a href="departments.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Departments</a>
+                        <a href="doctors.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Our Doctors</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Services</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Contact Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Emergency Care</a></li>
-                        <li><a href="services.html">Diagnostics</a></li>
-                        <li><a href="services.html">Surgery</a></li>
-                        <li><a href="services.html">Pharmacy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <div class="footer-links-list">
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Emergency Care</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Diagnostic Pathology</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 3T MRI & CT Scans</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Robotic Surgery</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Pharmacy</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Health Checkup Packages</a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
-                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Street, Healthcare City, State - 123456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+911234567890">+91 123 456 7890</a> (24/7 Line)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>OPD: Mon–Sat (9 AM – 7 PM) | Emergency: 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-box">
+                        <p>Subscribe for health tips & news:</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
-                        of Service</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. JCI & NABH Accredited Healthcare Provider.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Rights</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Emergency Floating Trigger -->
+    <a href="tel:+911234567890" class="floating-emergency" aria-label="Call Emergency Hotline">
+        <i class="fas fa-phone-alt"></i> <span>24/7 Emergency</span>
+    </a>
+
+    <!-- Interactive Script -->
     <script src="script.js"></script>
 </body>
 

@@ -884,7 +884,7 @@ ul, ol {
 .page-header-overlay {
     position: absolute;
     inset: 0;
-    background: url('images/hospital-hero.png') center/cover;
+    background: url('../images/hospital-hero.png') center/cover;
     opacity: 0.12;
     filter: saturate(1.2);
 }

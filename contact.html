@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact MZH Hospisol for appointments, emergencies, or inquiries. Available 24/7 for your healthcare needs.">
-    <title>Contact Us | MZH Hospisol</title>
+        content="Contact MZH Hospisol for hospital information, general inquiries, emergency services, or specialist guidance. We are available 24/7.">
+    <title>Contact Us | MZH Hospisol - 24/7 Healthcare Helpline</title>
+    
+    <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="logo.svg" alt="MZH Hospisol">
+            <a href="index.html" class="nav-logo" aria-label="MZH Hospisol Home">
+                <img src="logo.svg" alt="MZH Hospisol Logo" width="200" height="64">
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -34,214 +44,309 @@
                 <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                
+                <li class="nav-mobile-footer">
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-emergency btn-sm">
+                        <i class="fas fa-phone-alt"></i> Call 24/7 Hotline
+                    </a>
+                </li>
             </ul>
-            <a href="contact.html" class="nav-cta">
-                <i class="fas fa-phone-alt"></i> Contact Us
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="contact.html" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact Us
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-overlay"></div>
-        <div class="container">
-            <h1 class="page-title">Contact Us</h1>
-            <p class="page-subtitle">We're Here to Help You 24/7</p>
-            <div class="breadcrumb">
-                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header Banner -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <h1 class="page-title">Contact & Help Center</h1>
+                <p class="page-subtitle">We Are Available 24/7 To Assist You With Any Healthcare Inquiries</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="section contact-section">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-label"><span></span> Get In Touch</div>
-                    <h2 class="section-title">Book Your <span class="gradient-text">Appointment</span></h2>
-                    <p>Have a question or need to schedule an appointment? Fill out the form and our team will get back
-                        to you within 24 hours.</p>
+        <!-- Contact & Inquiry Section -->
+        <section class="section contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Contact Details & Info -->
+                    <div class="contact-info-panel reveal">
+                        <div class="section-label"><i class="fas fa-headset"></i> Get In Touch</div>
+                        <h2 class="section-title">Reach Out to Our <span class="gradient-text">Care Team</span></h2>
+                        <p style="color:var(--slate-600); line-height:1.7; margin-bottom:10px;">
+                            Have a question regarding medical services, insurance cashless claims, hospital admissions, or second opinions? Connect with our dedicated patient helpline or send us a message below.
+                        </p>
 
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 123 456 7890</p>
-                                <p>+91 098 765 4321</p>
+                        <div class="contact-methods-grid">
+                            <!-- Phone -->
+                            <div class="contact-method-card">
+                                <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Phone Helpline</h4>
+                                    <p>Emergency: <a href="tel:+911234567890">+91 123 456 7890</a> (24/7)</p>
+                                    <p>Hospital Desk: <a href="tel:+910987654321">+91 098 765 4321</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@mzhhospisol.com</p>
-                                <p>appointments@mzhhospisol.com</p>
+
+                            <!-- Email -->
+                            <div class="contact-method-card">
+                                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Inquiries</h4>
+                                    <p>General: <a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></p>
+                                    <p>Support: <a href="mailto:helpdesk@mzhhospisol.com">helpdesk@mzhhospisol.com</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h4>Address</h4>
-                                <p>123 Medical Street,</p>
-                                <p>Healthcare City, State - 123456</p>
+
+                            <!-- Address -->
+                            <div class="contact-method-card">
+                                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Hospital Location</h4>
+                                    <p>123 Medical Street, Healthcare City,</p>
+                                    <p>State Landmark, Zip Code - 123456</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                            <div>
-                                <h4>Working Hours</h4>
-                                <p>24/7 Emergency Services</p>
-                                <p>OPD: Mon-Sat 9 AM - 6 PM</p>
+
+                            <!-- Hours -->
+                            <div class="contact-method-card">
+                                <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4>Operating Hours</h4>
+                                    <p><strong>Emergency & ICU:</strong> 24 Hours / 7 Days</p>
+                                    <p><strong>OPD Clinics:</strong> Mon–Sat (9:00 AM – 7:00 PM)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
+                    <!-- Right: General Contact & Inquiry Form -->
+                    <div class="appointment-form-wrapper reveal">
+                        <div class="form-header">
+                            <h3>Send Us a Message</h3>
+                            <p>Fill in your details below and our patient care team will get back to you promptly.</p>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
+
+                        <form id="contactForm" novalidate>
+                            <div class="form-grid">
+                                <!-- Full Name -->
+                                <div class="form-group">
+                                    <label for="name" class="form-label"><i class="fas fa-user"></i> Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                                    <span class="form-feedback"></span>
+                                </div>
+
+                                <!-- Phone Number -->
+                                <div class="form-group">
+                                    <label for="phone" class="form-label"><i class="fas fa-phone"></i> Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+                                    <span class="form-feedback"></span>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="rahul@example.com" required>
+                                    <span class="form-feedback"></span>
+                                </div>
+
+                                <!-- Department / Subject -->
+                                <div class="form-group">
+                                    <label for="department" class="form-label"><i class="fas fa-hospital"></i> Department / Subject</label>
+                                    <select id="department" name="department" class="form-select">
+                                        <option value="">Select Topic of Interest</option>
+                                        <option value="general">General Hospital Inquiry</option>
+                                        <option value="cardiology">Cardiology (Heart Care)</option>
+                                        <option value="neurology">Neurology & Brain Care</option>
+                                        <option value="orthopedics">Orthopedics & Joint Care</option>
+                                        <option value="pediatrics">Pediatrics & Child Health</option>
+                                        <option value="oncology">Oncology (Cancer Care)</option>
+                                        <option value="diagnostics">Diagnostic & Lab Services</option>
+                                        <option value="insurance">Insurance & Cashless TPA</option>
+                                    </select>
+                                    <span class="form-feedback"></span>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-group full-width">
+                                    <label for="message" class="form-label"><i class="fas fa-comment-medical"></i> Message / Query *</label>
+                                    <textarea id="message" name="message" class="form-textarea" placeholder="Write your message, question, or inquiry here..." required></textarea>
+                                    <span class="form-feedback"></span>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-group full-width">
+                                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                        <i class="fas fa-paper-plane"></i> Send Message
+                                    </button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="department">Department</label>
-                                <select id="department" name="department">
-                                    <option value="">Select Department</option>
-                                    <option value="cardiology">Cardiology</option>
-                                    <option value="neurology">Neurology</option>
-                                    <option value="orthopedics">Orthopedics</option>
-                                    <option value="pediatrics">Pediatrics</option>
-                                    <option value="oncology">Oncology</option>
-                                    <option value="general">General Medicine</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Preferred Date</label>
-                                <input type="date" id="date" name="date">
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Preferred Time</label>
-                                <input type="time" id="time" name="time">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5"
-                                placeholder="Tell us about your health concern..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i> Book Appointment
-                        </button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Emergency Section -->
-    <section class="emergency-section">
-        <div class="container">
-            <div class="emergency-card">
-                <div class="emergency-icon">
-                    <i class="fas fa-ambulance"></i>
+        <!-- Emergency Banner Callout -->
+        <section class="emergency-banner-section">
+            <div class="container">
+                <div class="emergency-banner reveal">
+                    <div class="emergency-banner-left">
+                        <div class="emergency-banner-icon"><i class="fas fa-ambulance"></i></div>
+                        <div>
+                            <h3 class="emergency-banner-title">Need Urgent Emergency Care?</h3>
+                            <p class="emergency-banner-desc">Our emergency response trauma center and critical ICU ambulances operate 24 hours a day.</p>
+                        </div>
+                    </div>
+                    <div class="emergency-banner-actions">
+                        <a href="tel:108" class="btn btn-outline btn-lg">
+                            <i class="fas fa-phone-alt"></i> Dial 108
+                        </a>
+                        <a href="tel:+911234567890" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-headset"></i> Call +91 123 456 7890
+                        </a>
+                    </div>
                 </div>
-                <div class="emergency-content">
-                    <h3>Emergency Services</h3>
-                    <p>For medical emergencies, call our 24/7 hotline immediately</p>
-                </div>
-                <a href="tel:108" class="btn btn-accent btn-lg">
-                    <i class="fas fa-phone-alt"></i> Call 108
-                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Find Us on Map</h2>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844797932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635454878654!5m2!1sen!2sus"
-                    width="100%" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy">
-                </iframe>
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label"><i class="fas fa-location-dot"></i> Directions</div>
+                    <h2 class="section-title">Find Us on the <span class="gradient-text">Hospital Map</span></h2>
+                    <p class="section-subtitle">Located centrally with 24/7 dedicated ambulance driveway and valet patient parking.</p>
+                </div>
+                <div class="map-container reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844797932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635454878654!5m2!1sen!2sus"
+                        width="100%" height="400" allowfullscreen="" loading="lazy" title="MZH Hospisol Location Map">
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>MZH Hospisol</h3>
-                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
-                        advanced diagnostics with compassionate care.</p>
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="MZH Hospisol" width="220" height="72">
+                    </div>
+                    <p class="footer-desc">
+                        MZH Hospisol is a nationally and internationally accredited multi-specialty healthcare institution offering compassionate healing, cutting-edge diagnostics, and precision surgical care.
+                    </p>
                     <div class="footer-socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
-                        <li><a href="doctors.html">Our Doctors</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>
+                    <div class="footer-links-list">
+                        <a href="index.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> About Us</a>
+                        <a href="departments.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Departments</a>
+                        <a href="doctors.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Our Doctors</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Services</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Contact Us</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Emergency Care</a></li>
-                        <li><a href="services.html">Diagnostics</a></li>
-                        <li><a href="services.html">Surgery</a></li>
-                        <li><a href="services.html">Pharmacy</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Medical Services</h4>
+                    <div class="footer-links-list">
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Emergency Care</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Diagnostic Pathology</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 3T MRI & CT Scans</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Robotic Surgery</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> 24/7 Pharmacy</a>
+                        <a href="services.html"><i class="fas fa-chevron-right" style="font-size:10px;"></i> Health Checkup Packages</a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
-                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
-                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
-                    </ul>
+
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Medical Street, Healthcare City, State - 123456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+911234567890">+91 123 456 7890</a> (24/7 Line)</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@mzhhospisol.com">info@mzhhospisol.com</a></span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>OPD: Mon–Sat (9 AM – 7 PM) | Emergency: 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-box">
+                        <p>Subscribe for health tips & news:</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
-                        of Service</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. JCI & NABH Accredited Healthcare Provider.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Rights</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Mobile Emergency Floating Trigger -->
+    <a href="tel:+911234567890" class="floating-emergency" aria-label="Call Emergency Hotline">
+        <i class="fas fa-phone-alt"></i> <span>24/7 Emergency</span>
+    </a>
+
+    <!-- Interactive Script -->
     <script src="script.js"></script>
 </body>
 
