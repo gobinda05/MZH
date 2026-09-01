@@ -54,40 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // ===== 4. STATS COUNTER =====
+    // ===== 4. STATS COUNTER (DISABLED) =====
+    // Counter animation disabled - showing static numbers
     const statsSection = document.getElementById('stats');
     let counted = false;
 
-    if (statsSection) {
-        const statsObserver = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && !counted) {
-                counted = true;
-                document.querySelectorAll('.stat-number').forEach(stat => {
-                    const target = parseInt(stat.getAttribute('data-target'), 10);
-                    const duration = 2000;
-                    let start = null;
-
-                    function easeOutQuad(t) {
-                        return t * (2 - t);
-                    }
-
-                    function step(timestamp) {
-                        if (!start) start = timestamp;
-                        const progress = Math.min((timestamp - start) / duration, 1);
-                        const easedProgress = easeOutQuad(progress);
-                        stat.innerText = Math.floor(easedProgress * target).toLocaleString();
-                        if (progress < 1) {
-                            requestAnimationFrame(step);
-                        } else {
-                            stat.innerText = target.toLocaleString();
-                        }
-                    }
-                    requestAnimationFrame(step);
-                });
-            }
-        }, { threshold: 0.2 });
-        statsObserver.observe(statsSection);
-    }
+    // Counter disabled - static display only
+    // No animation on stats numbers
 
     // ===== 5. TESTIMONIAL SLIDER =====
     const slides = document.querySelectorAll('.testimonial-slide');

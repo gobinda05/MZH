@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MZH Hospisol - Your trusted healthcare partner offering world-class medical services, experienced doctors, advanced diagnostics, and 24/7 emergency care.">
-    <meta name="keywords" content="hospital, healthcare, doctors, diagnostics, emergency care, medical services, lab testing">
-    <meta name="author" content="MedZone Hospital">
+    <meta name="description"
+        content="MZH Hospisol - Your trusted healthcare partner offering world-class medical services, experienced doctors, advanced diagnostics, and 24/7 emergency care.">
+    <meta name="keywords"
+        content="hospital, healthcare, doctors, diagnostics, emergency care, medical services, lab testing">
     <title>MZH Hospisol | World-Class Healthcare & Medical Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -20,21 +26,18 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <i class="fas fa-heartbeat"></i>
-                <span>MZH <span class="logo-accent">Hospisol</span></span>
+            <a href="index.html" class="nav-logo">
+                <img src="logo.svg" alt="MZH Hospisol">
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#departments" class="nav-link">Departments</a></li>
-                <li><a href="#doctors" class="nav-link">Doctors</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#facilities" class="nav-link">Facilities</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="departments.html" class="nav-link">Departments</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">
+            <a href="contact.html" class="nav-cta">
                 <i class="fas fa-phone-alt"></i> Contact Us
             </a>
             <div class="hamburger" id="hamburger">
@@ -47,33 +50,30 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <canvas class="hero-particles" id="heroParticles"></canvas>
         <div class="hero-overlay"></div>
-        <img src="images/hospital-hero.png" alt="MedZone Hospital Building" class="hero-bg-img">
+        <img src="images/hospital-hero.png" alt="MZH Hospisol Building" class="hero-bg-img">
         <div class="hero-content">
-            <div class="hero-badge reveal">
-                <i class="fas fa-shield-alt"></i> NABL & NABH Accredited Hospisol
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt"></i> NABL & NABH Accredited Hospital
             </div>
-            <h1 class="hero-title reveal">
+            <h1 class="hero-title">
                 Compassionate Care,<br>
                 <span class="gradient-text">Advanced Medicine</span>
             </h1>
-            <p class="hero-subtitle reveal">
-                <span id="typingText"></span><span class="cursor">|</span>
+            <p class="hero-subtitle">24/7 Emergency Care Available</p>
+            <p class="hero-description">
+                Experience world-class healthcare with 500+ beds, 200+ expert doctors, and state-of-the-art technology.
+                From routine check-ups to complex surgeries — we're here for you, 24/7.
             </p>
-            <p class="hero-description reveal">
-                Experience world-class healthcare with 500+ beds, 200+ doctors, and state-of-the-art 
-                technology. From routine check-ups to complex surgeries — we're here for you, 24/7.
-            </p>
-            <div class="hero-buttons reveal">
-                <a href="#contact" class="btn btn-primary btn-pulse">
-                    <i class="fas fa-phone-alt"></i> Contact Us
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
                 </a>
-                <a href="#departments" class="btn btn-outline">
+                <a href="departments.html" class="btn btn-outline">
                     <i class="fas fa-stethoscope"></i> Our Departments
                 </a>
             </div>
-            <div class="hero-features reveal">
+            <div class="hero-features">
                 <div class="hero-feature">
                     <i class="fas fa-ambulance"></i>
                     <span>24/7 Emergency</span>
@@ -93,36 +93,87 @@
             </div>
         </div>
         <div class="hero-scroll">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            <a href="#stats"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-procedures"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">500</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Hospital Beds</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">200</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Expert Doctors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-heartbeat"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">50,000</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Surgeries Done</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">1,000,000</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Happy Patients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-building"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">30</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Departments</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="stat-display">
+                        <span class="stat-number">45</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick About Section -->
+    <section class="section about-preview">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image reveal-left">
-                    <img src="images/medical-team.png" alt="MedZone Hospital Medical Team">
+                <div class="about-image">
+                    <img src="images/medical-team.png" alt="MZH Hospisol Medical Team">
                     <div class="about-experience-badge">
                         <span class="experience-number">25+</span>
                         <span class="experience-text">Years of<br>Excellence</span>
                     </div>
                 </div>
-                <div class="about-content reveal-right">
+                <div class="about-content">
                     <div class="section-label">
                         <span></span> About MZH Hospisol
                     </div>
-                    <h2 class="section-title">Pioneering Healthcare<br>With <span class="gradient-text">Heart & Innovation</span></h2>
+                    <h2 class="section-title">Pioneering Healthcare With <span class="gradient-text">Heart &
+                            Innovation</span></h2>
                     <p class="about-text">
-                        Founded in 1999, MZH Hospisol has grown from a 50-bed facility to a 500+ bed 
-                        multi-specialty hospital that serves over 1 million patients annually. Our commitment 
-                        to combining compassionate care with cutting-edge technology has made us a leader in 
-                        the healthcare industry.
-                    </p>
-                    <p class="about-text">
-                        We bring together the finest medical minds, the latest technology, and a patient-first 
-                        approach to deliver healthcare that truly makes a difference. Our hospital is equipped 
-                        with advanced robotic surgery systems, AI-powered diagnostics, and digital health records.
+                        Founded in 1999, MZH Hospisol has grown from a 50-bed facility to a 500+ bed multi-specialty
+                        hospital that serves over 1 million patients annually. Our commitment to combining compassionate
+                        care with cutting-edge technology has made us a leader in the healthcare industry.
                     </p>
                     <div class="about-highlights">
                         <div class="about-highlight">
@@ -139,681 +190,83 @@
                                 <p>Da Vinci surgical system</p>
                             </div>
                         </div>
-                        <div class="about-highlight">
-                            <div class="highlight-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>
-                                <h4>Research Center</h4>
-                                <p>Active clinical research programs</p>
-                            </div>
-                        </div>
-                        <div class="about-highlight">
-                            <div class="highlight-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>
-                                <h4>Patient-First Care</h4>
-                                <p>Personalized treatment plans</p>
-                            </div>
-                        </div>
                     </div>
-                    <a href="#departments" class="btn btn-primary">
-                        <i class="fas fa-arrow-right"></i> Explore Our Departments
+                    <a href="about.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Learn More About Us
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section" id="stats">
+    <!-- Featured Departments -->
+    <section class="section departments-preview">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-procedures"></i></div>
-                    <div class="stat-number" data-target="500">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Hospital Beds</div>
-                </div>
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-user-md"></i></div>
-                    <div class="stat-number" data-target="200">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Expert Doctors</div>
-                </div>
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-heartbeat"></i></div>
-                    <div class="stat-number" data-target="50000">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Surgeries Done</div>
-                </div>
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
-                    <div class="stat-number" data-target="1000000">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Happy Patients</div>
-                </div>
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-building"></i></div>
-                    <div class="stat-number" data-target="30">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Departments</div>
-                </div>
-                <div class="stat-card reveal-scale">
-                    <div class="stat-icon"><i class="fas fa-award"></i></div>
-                    <div class="stat-number" data-target="45">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Awards Won</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Departments Section -->
-    <section class="section departments" id="departments">
-        <div class="container">
-            <div class="section-header reveal">
+            <div class="section-header">
                 <div class="section-label"><span></span> Our Departments</div>
                 <h2 class="section-title">Comprehensive Medical <span class="gradient-text">Specialties</span></h2>
-                <p class="section-subtitle">We offer a wide range of specialized departments, each staffed with experienced physicians and equipped with the latest medical technology.</p>
+                <p class="section-subtitle">We offer a wide range of specialized departments, each staffed with
+                    experienced physicians and equipped with the latest medical technology.</p>
             </div>
             <div class="departments-grid">
-                <div class="dept-card reveal" data-dept="cardiology">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-heart"></i></div>
                     <h3>Cardiology</h3>
-                    <p>Advanced cardiac care including angioplasty, bypass surgery, pacemaker implantation, and cardiac rehabilitation programs.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Cardiac Catheterization Lab</li>
-                        <li><i class="fas fa-check"></i> Echocardiography</li>
-                        <li><i class="fas fa-check"></i> Heart Failure Clinic</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Advanced cardiac care including angioplasty, bypass surgery, and pacemaker implantation.</p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dept-card reveal" data-dept="neurology">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
-                        <i class="fas fa-brain"></i>
-                    </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-brain"></i></div>
                     <h3>Neurology</h3>
-                    <p>Expert care for brain, spinal cord, and nervous system disorders including stroke, epilepsy, and neurodegenerative diseases.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Stroke Unit</li>
-                        <li><i class="fas fa-check"></i> Epilepsy Monitoring</li>
-                        <li><i class="fas fa-check"></i> Neuro Rehabilitation</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Expert care for brain, spinal cord, and nervous system disorders including stroke and epilepsy.
+                    </p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dept-card reveal" data-dept="orthopedics">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #55efc4, #00b894);">
-                        <i class="fas fa-bone"></i>
-                    </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-bone"></i></div>
                     <h3>Orthopedics</h3>
-                    <p>Complete bone and joint care including joint replacements, sports medicine, spine surgery, and trauma management.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Joint Replacement</li>
-                        <li><i class="fas fa-check"></i> Sports Medicine</li>
-                        <li><i class="fas fa-check"></i> Spine Surgery</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Complete bone and joint care including joint replacements and sports medicine.</p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dept-card reveal" data-dept="pediatrics">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #fdcb6e, #e17055);">
-                        <i class="fas fa-baby"></i>
-                    </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-baby"></i></div>
                     <h3>Pediatrics</h3>
-                    <p>Comprehensive child healthcare from newborn care to adolescent medicine, including pediatric surgery and NICU facilities.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Neonatal ICU (NICU)</li>
-                        <li><i class="fas fa-check"></i> Pediatric Surgery</li>
-                        <li><i class="fas fa-check"></i> Vaccination Center</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Comprehensive child healthcare from newborn care to adolescent medicine.</p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="dept-card reveal">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #74b9ff, #0984e3);">
-                        <i class="fas fa-lungs"></i>
-                    </div>
-                    <h3>Pulmonology</h3>
-                    <p>Respiratory care for asthma, COPD, pneumonia, lung cancer, and sleep disorders with advanced pulmonary function testing.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Pulmonary Function Lab</li>
-                        <li><i class="fas fa-check"></i> Sleep Study Center</li>
-                        <li><i class="fas fa-check"></i> Bronchoscopy Suite</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="dept-card reveal">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #fd79a8, #e84393);">
-                        <i class="fas fa-venus"></i>
-                    </div>
-                    <h3>Gynecology & Obstetrics</h3>
-                    <p>Complete women's health services including prenatal care, high-risk pregnancy management, and minimally invasive gynecological surgery.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> High-Risk Pregnancy</li>
-                        <li><i class="fas fa-check"></i> IVF Center</li>
-                        <li><i class="fas fa-check"></i> Laparoscopic Surgery</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="dept-card reveal">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #ffeaa7, #fdcb6e);">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Ophthalmology</h3>
-                    <p>Advanced eye care including LASIK, cataract surgery, retina treatment, glaucoma management, and pediatric ophthalmology.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> LASIK Surgery</li>
-                        <li><i class="fas fa-check"></i> Retina Clinic</li>
-                        <li><i class="fas fa-check"></i> Glaucoma Center</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="dept-card reveal">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #00cec9, #00b894);">
-                        <i class="fas fa-kidneys"></i>
-                    </div>
-                    <h3>Nephrology & Urology</h3>
-                    <p>Complete kidney care including dialysis, kidney transplant, stone management, and urological surgeries.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Dialysis Center</li>
-                        <li><i class="fas fa-check"></i> Kidney Transplant</li>
-                        <li><i class="fas fa-check"></i> Lithotripsy</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="dept-card reveal">
-                    <div class="dept-icon" style="background: linear-gradient(135deg, #636e72, #2d3436);">
-                        <i class="fas fa-ribbon"></i>
-                    </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-ribbon"></i></div>
                     <h3>Oncology</h3>
-                    <p>Comprehensive cancer care with medical, surgical, and radiation oncology. Advanced chemotherapy and immunotherapy treatments.</p>
-                    <ul class="dept-features">
-                        <li><i class="fas fa-check"></i> Chemotherapy Unit</li>
-                        <li><i class="fas fa-check"></i> Radiation Therapy</li>
-                        <li><i class="fas fa-check"></i> Tumor Board</li>
-                    </ul>
-                    <a href="#contact" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Comprehensive cancer care with medical, surgical, and radiation oncology.</p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <div class="dept-card">
+                    <div class="dept-icon"><i class="fas fa-venus"></i></div>
+                    <h3>Gynecology</h3>
+                    <p>Complete women's health services including prenatal care and IVF center.</p>
+                    <a href="departments.html" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="departments.html" class="btn btn-primary">View All Departments</a>
             </div>
         </div>
     </section>
 
-    <!-- Doctors Section -->
-    <section class="section doctors" id="doctors">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label"><span></span> Our Doctors</div>
-                <h2 class="section-title">Meet Our <span class="gradient-text">Expert Physicians</span></h2>
-                <p class="section-subtitle">Our team of highly qualified and experienced doctors are dedicated to providing exceptional patient care across all specialties.</p>
-            </div>
-            <div class="doctor-filters reveal">
-                <button class="filter-btn active" data-filter="all">All Doctors</button>
-                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
-                <button class="filter-btn" data-filter="neurology">Neurology</button>
-                <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
-                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
-            </div>
-            <div class="doctors-grid">
-                <div class="doctor-card reveal" data-department="cardiology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Rajesh Sharma</h3>
-                        <p class="doctor-specialty">Senior Cardiologist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 20+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD, DM (Cardio)</span>
-                        </div>
-                        <p class="doctor-desc">Specializes in interventional cardiology and complex angioplasties. Former HOD at AIIMS Delhi.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
+            <div class="cta-content">
+                <h2>Need Medical Assistance?</h2>
+                <p>Our team is available 24/7 to help you with any medical emergency or appointment booking.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone-alt"></i> Emergency: +91 123 456 7890
+                    </a>
                 </div>
-                <div class="doctor-card reveal" data-department="neurology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Priya Mehta</h3>
-                        <p class="doctor-specialty">Neurologist & Stroke Specialist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 15+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD, DM (Neuro)</span>
-                        </div>
-                        <p class="doctor-desc">Expert in stroke management and neurointerventional procedures. Published 50+ research papers.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
-                </div>
-                <div class="doctor-card reveal" data-department="orthopedics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder" style="background: linear-gradient(135deg, #55efc4, #00b894);"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Vikram Singh</h3>
-                        <p class="doctor-specialty">Orthopedic Surgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 18+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS (Ortho), MCh</span>
-                        </div>
-                        <p class="doctor-desc">Pioneer in robotic knee replacement surgery. Performed 5000+ joint replacements.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
-                </div>
-                <div class="doctor-card reveal" data-department="pediatrics">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder" style="background: linear-gradient(135deg, #fdcb6e, #e17055);"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Anita Desai</h3>
-                        <p class="doctor-specialty">Pediatrician & Neonatologist</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 12+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MD (Peds), DNB</span>
-                        </div>
-                        <p class="doctor-desc">Specialized in neonatal intensive care and pediatric infectious diseases. Compassionate child healthcare.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
-                </div>
-                <div class="doctor-card reveal" data-department="cardiology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Suresh Kumar</h3>
-                        <p class="doctor-specialty">Cardiac Surgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 25+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, MCh (CVTS)</span>
-                        </div>
-                        <p class="doctor-desc">Renowned for minimally invasive cardiac surgery. Successfully performed 3000+ open heart surgeries.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
-                </div>
-                <div class="doctor-card reveal" data-department="neurology">
-                    <div class="doctor-image">
-                        <div class="doctor-placeholder" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);"><i class="fas fa-user-md"></i></div>
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#contact"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="doctor-info">
-                        <h3>Dr. Amit Patel</h3>
-                        <p class="doctor-specialty">Neurosurgeon</p>
-                        <div class="doctor-details">
-                            <span><i class="fas fa-clock"></i> 22+ Years Exp.</span>
-                            <span><i class="fas fa-graduation-cap"></i> MS, MCh (Neuro)</span>
-                        </div>
-                        <p class="doctor-desc">Expertise in brain tumor surgery, spine surgery, and minimally invasive neurosurgical techniques.</p>
-                        <a href="#contact" class="btn btn-sm">Contact Doctor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services & Testing Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label"><span></span> Our Services</div>
-                <h2 class="section-title">Diagnostic & <span class="gradient-text">Testing Services</span></h2>
-                <p class="section-subtitle">State-of-the-art diagnostic facilities with NABL accredited laboratories ensuring accurate and timely results for all your medical tests.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-vial"></i></div>
-                    <h3>Blood Tests</h3>
-                    <p>Complete blood count, blood chemistry, hormone panels, thyroid function, liver function, kidney function, and lipid profiles.</p>
-                    <ul class="service-tests">
-                        <li>CBC (Complete Blood Count)</li>
-                        <li>HbA1c & Glucose Tests</li>
-                        <li>Thyroid Panel (T3, T4, TSH)</li>
-                        <li>Liver Function Test (LFT)</li>
-                        <li>Kidney Function Test (KFT)</li>
-                        <li>Lipid Profile</li>
-                        <li>Vitamin D, B12, Iron Studies</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹299</span></div>
-                </div>
-                <div class="service-card featured reveal">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="service-icon"><i class="fas fa-x-ray"></i></div>
-                    <h3>Imaging & Radiology</h3>
-                    <p>Advanced imaging technology for precise diagnostics including 3T MRI, 128-slice CT, digital X-ray, and high-resolution ultrasound.</p>
-                    <ul class="service-tests">
-                        <li>3T MRI Scan</li>
-                        <li>128-Slice CT Scan</li>
-                        <li>Digital X-Ray</li>
-                        <li>4D Ultrasound</li>
-                        <li>Mammography</li>
-                        <li>DEXA Scan (Bone Density)</li>
-                        <li>PET-CT Scan</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹999</span></div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Cardiac Diagnostics</h3>
-                    <p>Comprehensive heart health evaluation with advanced cardiac testing and monitoring services.</p>
-                    <ul class="service-tests">
-                        <li>ECG (Electrocardiogram)</li>
-                        <li>2D Echocardiography</li>
-                        <li>Treadmill Test (TMT)</li>
-                        <li>Holter Monitoring (24hr)</li>
-                        <li>Cardiac CT Angiography</li>
-                        <li>Stress Echo</li>
-                        <li>Ambulatory BP Monitoring</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹499</span></div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-microscope"></i></div>
-                    <h3>Pathology & Histopathology</h3>
-                    <p>Advanced pathological analysis including biopsy, cytology, and molecular diagnostics for precise disease identification.</p>
-                    <ul class="service-tests">
-                        <li>Biopsy Analysis</li>
-                        <li>Pap Smear</li>
-                        <li>FNAC (Fine Needle Aspiration)</li>
-                        <li>Frozen Section</li>
-                        <li>Immunohistochemistry</li>
-                        <li>Tumor Markers</li>
-                        <li>Genetic Testing</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹799</span></div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-dna"></i></div>
-                    <h3>Molecular & Genetic Tests</h3>
-                    <p>Cutting-edge molecular diagnostics including PCR, gene sequencing, and pharmacogenomics for personalized medicine.</p>
-                    <ul class="service-tests">
-                        <li>PCR Testing</li>
-                        <li>Gene Sequencing (NGS)</li>
-                        <li>Prenatal Genetic Testing</li>
-                        <li>Cancer Gene Panels</li>
-                        <li>Pharmacogenomics</li>
-                        <li>Carrier Screening</li>
-                        <li>Whole Exome Sequencing</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹2,499</span></div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
-                    <h3>Health Checkup Packages</h3>
-                    <p>Comprehensive health screening packages designed for preventive healthcare and early detection of diseases.</p>
-                    <ul class="service-tests">
-                        <li>Basic Health Checkup (40+ tests)</li>
-                        <li>Executive Health Checkup (70+ tests)</li>
-                        <li>Master Health Checkup (100+ tests)</li>
-                        <li>Women's Health Package</li>
-                        <li>Cardiac Risk Assessment</li>
-                        <li>Diabetes Screening Package</li>
-                        <li>Senior Citizen Package</li>
-                    </ul>
-                    <div class="service-price">Starting from <span>₹1,499</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Facilities Section -->
-    <section class="section facilities" id="facilities">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label"><span></span> Our Facilities</div>
-                <h2 class="section-title">World-Class <span class="gradient-text">Infrastructure</span></h2>
-                <p class="section-subtitle">Our hospital is equipped with state-of-the-art infrastructure and the latest medical technology to ensure the best possible patient outcomes.</p>
-            </div>
-            <div class="facilities-grid">
-                <div class="facility-card reveal" data-lightbox="images/emergency-care.png">
-                    <img src="images/emergency-care.png" alt="24/7 Emergency Department" loading="lazy">
-                    <div class="facility-overlay">
-                        <h3>24/7 Emergency & Trauma</h3>
-                        <p>Level 1 trauma center with 30-bed emergency department, helipad, and dedicated trauma surgery team.</p>
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="facility-card reveal" data-lightbox="images/lab-testing.png">
-                    <img src="images/lab-testing.png" alt="Advanced Diagnostic Laboratory" loading="lazy">
-                    <div class="facility-overlay">
-                        <h3>NABL Accredited Lab</h3>
-                        <p>Fully automated laboratory with 500+ test capabilities, providing accurate results within 2-4 hours.</p>
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="facility-card facility-card-tall reveal">
-                    <div class="facility-content-card">
-                        <div class="facility-content-icon"><i class="fas fa-procedures"></i></div>
-                        <h3>Modular Operation Theatres</h3>
-                        <p>12 state-of-the-art modular OTs with HEPA filtration, laminar airflow, and integrated surgical systems including the Da Vinci robotic surgery platform.</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Robotic Surgery Suite</li>
-                            <li><i class="fas fa-check-circle"></i> Hybrid Cath Lab</li>
-                            <li><i class="fas fa-check-circle"></i> Neuro-Navigation System</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="facility-card reveal">
-                    <div class="facility-content-card" style="background: linear-gradient(135deg, #0a2463, #3e92cc);">
-                        <div class="facility-content-icon"><i class="fas fa-pills"></i></div>
-                        <h3>24/7 Pharmacy</h3>
-                        <p>In-house pharmacy with 10,000+ medicines in stock, operated by qualified pharmacists round the clock.</p>
-                    </div>
-                </div>
-                <div class="facility-card reveal">
-                    <div class="facility-content-card" style="background: linear-gradient(135deg, #2ec4b6, #009688);">
-                        <div class="facility-content-icon"><i class="fas fa-ambulance"></i></div>
-                        <h3>Ambulance Fleet</h3>
-                        <p>Fleet of 15 advanced life support (ALS) ambulances with GPS tracking and paramedic teams, ensuring rapid response.</p>
-                    </div>
-                </div>
-                <div class="facility-card reveal">
-                    <div class="facility-content-card" style="background: linear-gradient(135deg, #ff6b35, #e55d30);">
-                        <div class="facility-content-icon"><i class="fas fa-utensils"></i></div>
-                        <h3>Dietary Services</h3>
-                        <p>Nutritionist-planned meals for patients with specialized dietary requirements. Cafeteria for visitors and staff.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="more-facilities reveal">
-                <h3>Additional Facilities</h3>
-                <div class="facilities-list">
-                    <div class="facility-item">
-                        <i class="fas fa-wifi"></i>
-                        <span>Free Wi-Fi</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-parking"></i>
-                        <span>Valet Parking</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-wheelchair"></i>
-                        <span>Wheelchair Access</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-pray"></i>
-                        <span>Prayer Room</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-credit-card"></i>
-                        <span>Insurance Desk</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-globe"></i>
-                        <span>International Patient Services</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-tint"></i>
-                        <span>Blood Bank</span>
-                    </div>
-                    <div class="facility-item">
-                        <i class="fas fa-baby-carriage"></i>
-                        <span>Birthing Suites</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label"><span></span> Testimonials</div>
-                <h2 class="section-title">What Our <span class="gradient-text">Patients Say</span></h2>
-                <p class="section-subtitle">Hear from the thousands of patients who trust MZH Hospisol for their healthcare needs.</p>
-            </div>
-            <div class="testimonial-slider reveal">
-                <div class="testimonial-track" id="testimonialTrack">
-                    <div class="testimonial-slide active">
-                        <div class="testimonial-card">
-                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">The cardiac team at MZH Hospisol saved my life. Dr. Rajesh Sharma performed an emergency angioplasty and the care I received was world-class. The nursing staff was incredibly supportive throughout my recovery. I can't thank them enough!</p>
-                            <div class="testimonial-author">
-                                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
-                                <div>
-                                    <h4>Ramesh Gupta</h4>
-                                    <p>Cardiac Patient</p>
-                                    <div class="testimonial-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">I had my knee replacement surgery at MZH Hospisol and the experience was exceptional. Dr. Vikram Singh used the latest robotic technology. Within 3 weeks, I was walking again! The physiotherapy team was amazing.</p>
-                            <div class="testimonial-author">
-                                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
-                                <div>
-                                    <h4>Sunita Devi</h4>
-                                    <p>Orthopedic Patient</p>
-                                    <div class="testimonial-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">The maternity care at MZH Hospisol was phenomenal. From prenatal checkups to delivery, every step was handled with utmost care. The NICU facility for my premature baby was world-class. Truly grateful to the entire OB-GYN team.</p>
-                            <div class="testimonial-author">
-                                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
-                                <div>
-                                    <h4>Meera Krishnan</h4>
-                                    <p>Maternity Patient</p>
-                                    <div class="testimonial-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
-                            <p class="testimonial-text">I got my complete health checkup done at MZH Hospisol. The process was seamless — from registration to sample collection to receiving reports online. The lab is NABL accredited and the reports were very detailed. Highly recommended!</p>
-                            <div class="testimonial-author">
-                                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
-                                <div>
-                                    <h4>Anil Kapoor</h4>
-                                    <p>Health Checkup</p>
-                                    <div class="testimonial-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="testimonial-dots" id="testimonialDots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                    <button class="testimonial-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-label"><span></span> Contact Us</div>
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <p class="section-subtitle">We're here to help. Reach out to us through any of the following channels.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card reveal">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Our Location</h3>
-                    <p>MZH Hospisol Complex<br>Plot No. 42, Healthcare Avenue<br>Sector 15, New Delhi - 110001</p>
-                </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                    <h3>Phone Numbers</h3>
-                    <p>General: +91 11-4567-8900<br>Emergency: +91 1800-123-4567<br>Appointment: +91 11-4567-8901</p>
-                </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email Us</h3>
-                    <p>General: info@medzone.com<br>Appointments: book@medzone.com<br>Careers: hr@medzone.com</p>
-                </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Working Hours</h3>
-                    <p>OPD: Mon-Sat, 8 AM - 8 PM<br>Emergency: 24/7, All Days<br>Lab: Mon-Sat, 7 AM - 9 PM</p>
-                </div>
-            </div>
-            <div class="map-container reveal">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.566604918281!2d77.20659687549713!3d28.61393917567452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1698000000000" width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -822,82 +275,56 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="footer-logo">
-                        <i class="fas fa-heartbeat"></i>
-                        <span>MZH <span class="logo-accent">Hospisol</span></span>
-                    </a>
-                    <p class="footer-desc">MZH Hospisol has been providing world-class healthcare services since 1999. We are committed to excellence in patient care, medical education, and research.</p>
+                <div class="footer-about">
+                    <h3>MZH Hospisol</h3>
+                    <p>Your trusted healthcare partner offering world-class medical services, experienced doctors, and
+                        advanced diagnostics with compassionate care.</p>
                     <div class="footer-socials">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#departments">Departments</a></li>
-                        <li><a href="#doctors">Our Doctors</a></li>
-                        <li><a href="#services">Services & Tests</a></li>
-
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+                <div class="footer-links">
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="#services">Blood Tests</a></li>
-                        <li><a href="#services">MRI & CT Scan</a></li>
-                        <li><a href="#services">Health Checkups</a></li>
-                        <li><a href="#services">Cardiac Tests</a></li>
-                        <li><a href="#services">Pathology</a></li>
-                        <li><a href="#services">Genetic Testing</a></li>
+                        <li><a href="services.html">Emergency Care</a></li>
+                        <li><a href="services.html">Diagnostics</a></li>
+                        <li><a href="services.html">Surgery</a></li>
+                        <li><a href="services.html">Pharmacy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to our newsletter for health tips, updates, and exclusive offers.</p>
-                    <form class="newsletter-form" id="newsletterForm">
-                        <div class="newsletter-input-group">
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                    <div class="footer-certifications">
-                        <h4>Accreditations</h4>
-                        <div class="cert-badges">
-                            <div class="cert-badge">NABH</div>
-                            <div class="cert-badge">NABL</div>
-                            <div class="cert-badge">JCI</div>
-                            <div class="cert-badge">ISO</div>
-                        </div>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Street, Healthcare City</li>
+                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@mzhhospisol.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Services</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 MZH Hospisol. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Disclaimer</a></p>
+                <p>&copy; 2024 MZH Hospisol. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms
+                        of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
-        <img src="" alt="Facility Image" id="lightboxImg">
-    </div>
-
-    <!-- Toast Container -->
-    <div class="toast-container" id="toastContainer"></div>
-
     <script src="script.js"></script>
 </body>
+
 </html>
